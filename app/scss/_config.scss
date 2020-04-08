@@ -9,7 +9,7 @@ $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Fa
 $font-family: "ArialNarrow", sans-serif; // Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px;
+$grid-gutter-width: 20px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
@@ -100,7 +100,7 @@ ol {
 // Навигация
 
 $link-color: #000;
-$link-hover-color: #fff;
+$link-hover-color: $accent;
 
 a {
 	color: $link-color;
@@ -153,6 +153,8 @@ $btn-border-width: 1px !default;
 	font-family: "Helvetica", sans-serif;
 	&-wrap {
 		display: flex;
+		width: max-content;
+		cursor: pointer;
 		&:hover {
 			.btn-detail {
 				margin: 0 0 0 -2px;
@@ -182,7 +184,7 @@ $btn-border-width: 1px !default;
 		color: #fff;
 		margin: 0 0 0 4px;
 		max-height: 56px;
-		transition: 0.3s ease;
+		transition: 0.3s ease-out;
 		&::before {
 			content: "";
 			z-index: -1;
@@ -198,23 +200,156 @@ $btn-border-width: 1px !default;
 			content: "";
 			position: absolute;
 			z-index: -2;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			width: 100%;
+			bottom: 20px;
+			left: -23%;
+			right: -30%;
 			height: 1px;
-			background: #6e6e6e;
-			box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+			border-radius: 47%;
+			background: rgba(255, 255, 255, 0);
+			box-shadow: 0px 23px 7px 1px rgba(0, 0, 0, 0.5);
 		}
 	}
 	&-span {
-		display: inline-block;
+		display: block;
 		background: $accent;
 		width: 30px;
 		transform: skewX(-27deg);
-		transition: 0.3s ease-in;
+		transition: 0.3s ease-out;
 		&:not(:first-child) {
 			margin: 0 0 0 5px;
 		}
+	}
+
+	&-black {
+		font-size: 10px;
+		font-family: Arial, sans-serif;
+		padding: 7px 39px 6px;
+		position: relative;
+		color: #fff;
+		&::before {
+			content: "";
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: -1;
+			position: absolute;
+			transform: skewX(-27deg);
+			background: #000;
+			transition: 0.3s ease;
+		}
+		&:hover {
+			&::before {
+				background: $dark;
+			}
+		}
+	}
+}
+
+.logo-wrap {
+	display: flex;
+	justify-content: space-between;
+	font-family: "PTSans", sans-serif;
+	position: relative;
+	color: $dark;
+	font-size: 16px;
+	width: 9.4375em;
+	height: 3.375em;
+	cursor: pointer;
+	&:hover {
+		.logo {
+			span {
+				background: $accent;
+				&:nth-child(-n + 3) {
+					background: $dark;
+				}
+			}
+		}
+	}
+	.logo {
+		width: 4em;
+		height: 3.375em;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 0.25em;
+			height: 3.75em;
+			background: #fff;
+			right: 1.5em;
+			transform: skewX(26deg);
+			z-index: 1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 1.1875em;
+			height: 1.1875em;
+			right: 1.5625em;
+			bottom: 1.5625em;
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			background: #fff;
+			z-index: 1;
+		}
+		span {
+			position: absolute;
+			width: 1.25em;
+			height: 1.25em;
+			background: $dark;
+			transition: 0.3s ease;
+			&:nth-child(-n + 3) {
+				display: inline-block;
+				background: $accent;
+				width: 0.625em;
+				height: 0.9375em;
+				bottom: 0;
+				transform: skewX(-26deg);
+			}
+			&:nth-child(1) {
+				left: 0.1875em;
+			}
+			&:nth-child(2) {
+				left: 1.0625em;
+			}
+			&:nth-child(3) {
+				left: 1.9375em;
+			}
+			&:nth-child(4) {
+				clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+				width: 2.0625em;
+				height: 2.125em;
+				left: 0.5em;
+				bottom: 1.125em;
+			}
+			&:nth-child(5) {
+				right: 0.9375em;
+				bottom: 0;
+				width: 0.625em;
+				height: 3.25em;
+				transform: skewX(27deg);
+			}
+		}
+	}
+	.logo-text {
+		font-size: 2em;
+		line-height: 0.875em;
+		color: $dark;
+		transition: color 0.3s ease;
+		&:hover {
+			color: lighten($dark, 15%);
+		}
+		@media (max-width: 380px) {
+			display: none;
+		}
+	}
+}
+
+.logo-em-header {
+	@include fluidFontSize(11px, 16px, 1024px, 1620px);
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
+	@media (max-width: 568px) {
+		font-size: 12px;
 	}
 }

@@ -49,7 +49,7 @@
 	}
 }
 
-// миксин для отзывчивых width
+// миксин для отзывчивых height
 @mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
 	height: $f-min;
 
@@ -61,5 +61,50 @@
 	}
 	@media (min-width: $w-max) {
 		height: $f-max;
+	}
+}
+
+// миксин для отзывчивых marginRight
+@mixin fluidMarginRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	margin-right: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			margin-right: $fallback;
+		}
+		margin-right: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		margin-right: $f-max;
+	}
+}
+
+// миксин для отзывчивых paddingRight
+@mixin fluidPaddingRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	padding-right: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding-right: $fallback;
+		}
+		padding-right: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-right: $f-max;
+	}
+}
+
+// миксин для отзывчивых paddingRight
+@mixin fluidPaddingTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	padding-top: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding-top: $fallback;
+		}
+		padding-top: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-top: $f-max;
 	}
 }
