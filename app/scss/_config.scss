@@ -4,12 +4,12 @@ $accent: #fcc409; // Accent Color
 $dark: #4d4d4d;
 $blue: #054881;
 $fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
+$textcolor: #000; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
+$font-family: "ArialNarrow", sans-serif; // Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 30px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
@@ -37,10 +37,12 @@ $gutter: $grid-gutter-width;
 	}
 }
 
-@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
-@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
-@include font("Roboto", italic, 700, "../fonts/roboto-bolditalic-webfont.woff2");
+@include font("Arial", normal, 400, "../fonts/ArialMT.woff2");
+@include font("ArialNarrow", normal, 400, "../fonts/ArialNarrow7.woff2");
+@include font("ArialNarrow", bold, 700, "../fonts/ArialNarrowBold.woff2");
+@include font("PTSans", normal, 400, "../fonts/PTSansRegular.woff2");
+@include font("Helvetica", normal, 400, "../fonts/HelveticaRegular.woff2");
+@include font("Helvetica", bold, 700, "../fonts/HelveticaNeueCondensedBold.woff2");
 
 // GENERAL DOCUMENT STYLES
 
@@ -49,8 +51,68 @@ $gutter: $grid-gutter-width;
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: $blue;
 	color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: $font-family;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+}
+
+// Заголовки
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 16px;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	ul,
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+// Навигация
+
+$link-color: #000;
+$link-hover-color: #fff;
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	outline: none !important;
+	transition: 0.2s color;
+
+	&:hover,
+	&:focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
 }
 
 input,
@@ -64,195 +126,95 @@ textarea {
 	}
 }
 
-body {
-	font-family: $roboto;
-	font-size: $fontsize;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	overflow-x: hidden;
-	color: $textcolor;
-}
+$btn-font-size: $fontsize !default;
+$btn-line-height: $fontsize !default;
+$btn-box-shadow: inset 0 3px 5px rgba(black, 0.125);
+$btn-disabled-opacity: 0.65;
+$btn-border-width: 1px !default;
 
-@function fs($f-min, $f-max, $w-min, $w-max, $units: px) {
-	$f-min: strip-unit($f-min);
-	$f-max: strip-unit($f-max);
-	$w-min: strip-unit($w-min);
-	$w-max: strip-unit($w-max);
-
-	$k: ($f-max - $f-min)/ ($w-max - $w-min);
-	$b: $f-min - $k * $w-min;
-
-	$b: $b + $units;
-
-	@return calc(#{$k} * 100vw + #{$b});
-}
-
-// миксин для отзывчивых размеров, нужно создать разных отсьупов
-@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	font-size: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			font-size: $fallback;
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: $btn-border-width solid transparent;
+	white-space: nowrap;
+	font-size: $btn-font-size;
+	user-select: none;
+	transition-property: box-shadow, background-color;
+	transition-duration: 0.2s;
+	outline: none !important;
+	text-decoration: none !important;
+	padding: 6px 12px;
+	font-family: "Helvetica", sans-serif;
+	&-wrap {
+		display: flex;
+		&:hover {
+			.btn-detail {
+				margin: 0 0 0 -2px;
+				&::before {
+					background: $dark;
+				}
+			}
+			.btn-span {
+				&:not(:first-child) {
+					margin: 0 0 0 5px;
+				}
+				&:nth-child(1) {
+					background: $dark;
+				}
+				&:nth-child(3) {
+					background: $dark;
+					margin: 0 0 0 -2px;
+				}
+			}
 		}
-		font-size: fs($f-min, $f-max, $w-min, $w-max, px);
 	}
-	@media (min-width: $w-max) {
-		font-size: $f-max;
-	}
-}
-
-// миксин для отзывчивых width
-@mixin fluidWidth($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	width: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			width: $fallback;
+	&-detail {
+		display: inline-block;
+		position: relative;
+		font-weight: 400;
+		padding: 14px 23px 12px;
+		color: #fff;
+		margin: 0 0 0 4px;
+		max-height: 56px;
+		transition: 0.3s ease;
+		&::before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			background: $blue;
+			top: -1px;
+			bottom: -1px;
+			right: 0;
+			left: 0;
+			transform: skewX(-27deg);
 		}
-		width: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		width: $f-max;
-	}
-}
-
-// миксин для отзывчивых padding
-@mixin fluidPadding($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	padding: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: -2;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 1px;
+			background: #6e6e6e;
+			box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
 		}
-		padding: fs($f-min, $f-max, $w-min, $w-max, px);
 	}
-	@media (min-width: $w-max) {
-		padding: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingTop
-@mixin fluidPaddingTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	padding-top: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
+	&-span {
+		display: inline-block;
+		background: $accent;
+		width: 30px;
+		transform: skewX(-27deg);
+		transition: 0.3s ease-in;
+		&:not(:first-child) {
+			margin: 0 0 0 5px;
 		}
-		padding-top: fs($f-min, $f-max, $w-min, $w-max, px);
 	}
-	@media (min-width: $w-max) {
-		padding-top: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingLeft
-@mixin fluidPaddingLeft($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	padding-left: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
-		}
-		padding-left: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		padding-left: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingRight
-@mixin fluidPaddingRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	padding-right: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
-		}
-		padding-right: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		padding-right: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingRight
-@mixin fluidPaddingBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	padding-bottom: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
-		}
-		padding-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		padding-bottom: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingRight
-@mixin fluidMarginRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	margin-right: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			padding: $fallback;
-		}
-		margin-right: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		margin-right: $f-max;
-	}
-}
-
-// миксин для отзывчивых paddingRight
-@mixin fluidMarginTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	margin-top: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			margin: $fallback;
-		}
-		margin-top: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		margin-top: $f-max;
-	}
-}
-
-// mixin
-@mixin fluidMarginBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	margin-bottom: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			margin: $fallback;
-		}
-		margin-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		margin-bottom: $f-max;
-	}
-}
-
-// mixin
-@mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	height: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			margin: $fallback;
-		}
-		height: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		height: $f-max;
-	}
-}
-
-.fluid-font-size {
-	@include fluidFontSize(16px, 24px, 480px, 1280px, 18px);
 }
