@@ -94,7 +94,7 @@
 	}
 }
 
-// миксин для отзывчивых paddingRight
+// миксин для отзывчивых paddingTop
 @mixin fluidPaddingTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
 	padding-top: $f-min;
 
@@ -106,5 +106,20 @@
 	}
 	@media (min-width: $w-max) {
 		padding-top: $f-max;
+	}
+}
+
+// миксин для отзывчивых paddingBottom
+@mixin fluidPaddingBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	padding-bottom: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding-bottom: $fallback;
+		}
+		padding-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-bottom: $f-max;
 	}
 }

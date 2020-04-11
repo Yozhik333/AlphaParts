@@ -38,7 +38,7 @@ $gutter: $grid-gutter-width;
 }
 
 @include font("Arial", normal, 400, "../fonts/ArialMT.woff2");
-@include font("ArialNarrow", normal, 400, "../fonts/ArialNarrow7.woff2");
+@include font("ArialNarrow", normal, 400, "../fonts/ArialNarrow.woff2");
 @include font("ArialNarrow", bold, 700, "../fonts/ArialNarrowBold.woff2");
 @include font("PTSans", normal, 400, "../fonts/PTSansRegular.woff2");
 @include font("Helvetica", normal, 400, "../fonts/HelveticaRegular.woff2");
@@ -70,6 +70,39 @@ body {
 }
 
 // Заголовки
+
+h1 {
+	text-transform: uppercase;
+	color: $accent;
+	@include fluidFontSize(64px, 80px, 1024px, 1620px);
+	font-weight: normal;
+	line-height: 80px;
+}
+
+h2 {
+	color: $accent;
+	@include fluidFontSize(37px, 53px, 1024px, 1620px);
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 53px;
+}
+
+h3 {
+	@include fluidFontSize(20px, 36px, 1024px, 1620px);
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 36px;
+	@include fluidPaddingBottom(25px, 45px, 1024px, 1620px);
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 59px;
+		height: 4px;
+		background: #000;
+		bottom: 15%;
+	}
+}
 
 h1,
 h2,
@@ -223,7 +256,7 @@ $btn-border-width: 1px !default;
 	&-black {
 		font-size: 10px;
 		font-family: Arial, sans-serif;
-		padding: 7px 39px 6px;
+		padding: 4px 39px 4px;
 		position: relative;
 		color: #fff;
 		&::before {
