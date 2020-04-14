@@ -57,6 +57,7 @@ $gutter: $grid-gutter-width;
 
 html {
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 body {
@@ -81,7 +82,7 @@ h1 {
 
 h2 {
 	color: $accent;
-	@include fluidFontSize(37px, 53px, 1024px, 1620px);
+	@include fluidFontSize(33px, 53px, 1024px, 1620px);
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 53px;
@@ -218,6 +219,7 @@ $btn-border-width: 1px !default;
 		margin: 0 0 0 4px;
 		max-height: 56px;
 		transition: 0.3s ease-out;
+		z-index: 1;
 		&::before {
 			content: "";
 			z-index: -1;
@@ -385,4 +387,13 @@ $btn-border-width: 1px !default;
 	@media (max-width: 568px) {
 		font-size: 12px;
 	}
+}
+
+.logo-em-third {
+	@include fluidFontSize(11px, 30px, 1024px, 1620px);
+	@include fluidFontSize(16px, 30px, 320px, 1024px);
+}
+
+.logo-em-six {
+	@include fluidFontSize(19px, 19px, 1024px, 1620px);
 }
