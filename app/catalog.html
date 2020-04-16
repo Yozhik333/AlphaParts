@@ -18,7 +18,7 @@
 	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 		|||||||||||||||||||  Designed by Maint by Dyusengaliev Temirlan ||||||||||||||||||||||-->
 
-	<header class="header">
+	<header class="header header-catalog">
 		<div class="container-xl">
 			<div class="header__flex">
 				<div class="header__flex-left">
@@ -66,14 +66,22 @@
 	</header>
 	<!-- /.container -->
 
+	<div class="catalog-banner">
+		<div class="filter" style="background-image: url(../images/dest/item-5.jpg);"></div>
+	</div>
+	<!-- /.catalog-banner -->
 
-	<div class="catalog-first" style="background-image: url(../images/dest/item-5.jpg);">
-		<div class="container-xl">
+
+	<section class="catalog-first">
+		<div class="container">
+
 			<div class="catalog-first-wrap">
 
 				<div class="catalog-item-wrap">
 					<div class="catalog-item">
-						<img src="images/dest/catalog-icon-1.png" alt="Запасные части для дробилок и грохотов">
+						<div class="catalog-item__img">
+							<img src="images/dest/catalog-icon-1.png" alt="Запасные части для дробилок и грохотов">
+						</div>
 						<div class="catalog-item__text">
 							Запасные части для
 							дробилок и грохотов
@@ -84,7 +92,9 @@
 
 				<div class="catalog-item-wrap">
 					<div class="catalog-item">
-						<img src="images/dest/catalog-icon-2.png" alt="Запасные части для конвейеров">
+						<div class="catalog-item__img">
+							<img src="images/dest/catalog-icon-2.png" alt="Запасные части для конвейеров">
+						</div>
 						<div class="catalog-item__text">
 							Запасные части
 							для конвейеров
@@ -95,7 +105,10 @@
 
 				<div class="catalog-item-wrap">
 					<div class="catalog-item">
-						<img src="images/dest/catalog-icon-3.png" alt="Компоненты для мобильных дробильно-сортировочных комплексов">
+						<div class="catalog-item__img">
+							<img src="images/dest/catalog-icon-3.png"
+								alt="Компоненты для мобильных дробильно-сортировочных комплексов">
+						</div>
 						<div class="catalog-item__text">
 							Компоненты для
 							мобильных дробильно-
@@ -107,7 +120,9 @@
 
 				<div class="catalog-item-wrap">
 					<div class="catalog-item">
-						<img src="images/dest/catalog-icon-4.png" alt="Сервисные услуги">
+						<div class="catalog-item__img">
+							<img src="images/dest/catalog-icon-4.png" alt="Сервисные услуги">
+						</div>
 						<div class="catalog-item__text">
 							Сервисные услуги
 						</div>
@@ -115,11 +130,49 @@
 				</div>
 				<!-- /.catalog-item -->
 			</div>
-			<!-- /.catalog__items-wrap -->
+			<!-- /.catalog__first-wrap -->
+
+			<div class="catalog-tables">
+
+				<div class="catalog-tables-grid">
+					<div class="table-head">
+						<div class="table-head__number">№</div>
+						<div class="table-head__name">Наименование детали</div>
+						<div class="table-head__vendor-code">Артикул</div>
+						<div class="table-head__mark">Марка</div>
+						<div class="table-head__model">Модель</div>
+						<div class="table-head__info">Дополнительная информация</div>
+					</div>
+					<!-- /.table-head -->
+
+					<!-- ВНИМАТЕЛЬНО! Я расположил заголовки вместе с рядами, потому что по дизайну они идут все отдельно -->
+
+
+
+				</div>
+				<!-- /.catalog-tables-grid -->
+
+				<div class="catalog-tables__pagination">
+					<ul class="pagination">
+						<div class="prev"> &#60; </div>
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<div class="next"> &#62; </div>
+					</ul>
+				</div>
+				<!-- /.catalog-tables__pagination -->
+
+			</div>
+			<!-- /.catalog-tables -->
+
 		</div>
 		<!-- /.container-xl -->
-	</div>
-	<!-- /.catalog-items -->
+	</section>
+	<!-- /.catalog-first -->
+
 
 
 	<footer class="footer">
