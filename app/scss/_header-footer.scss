@@ -37,6 +37,7 @@
 			.top-line {
 				padding: 20px 0 18px;
 				padding-right: 97px;
+				z-index: 2;
 				//@include fluidPaddingRight(0px, 97px, 1360px, 1680px);
 				@media (max-width: 1360px) {
 					padding-right: 25px;

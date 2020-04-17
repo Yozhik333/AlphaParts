@@ -1,3 +1,37 @@
+.four-section {
+	&__headline {
+		display: flex;
+		justify-content: center;
+		p {
+			font-family: "Arial", sans-serif;
+			font-size: 36px;
+			font-style: italic;
+			margin: 0 0 0 15px;
+		}
+	}
+}
+
+.cubes-wrap {
+	display: flex;
+	justify-content: center;
+	.cube {
+		width: 243px;
+		height: 243px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		&-side {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+		&:nth-child(1) {
+			background: $accent;
+		}
+	}
+}
+
 .six-section {
 	padding: 112px 0 103px;
 	@media (max-width: 1024px) {
