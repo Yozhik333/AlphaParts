@@ -94,6 +94,21 @@
 	}
 }
 
+// миксин для отзывчивых padding
+@mixin fluidPadding($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	padding: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding: $f-max;
+	}
+}
+
 // миксин для отзывчивых paddingRight
 @mixin fluidPaddingRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
 	padding-right: $f-min;

@@ -1,7 +1,10 @@
 .four-section {
+	@include fluidPaddingTop(100px, 200px, 1024px, 1620px);
+	@include fluidPaddingBottom(120px, 254px, 1024px, 1620px);
 	&__headline {
 		display: flex;
 		justify-content: center;
+		margin: 0 0 77px;
 		p {
 			font-family: "Arial", sans-serif;
 			font-size: 36px;
@@ -13,21 +16,335 @@
 
 .cubes-wrap {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	@media (max-width: 1620px) {
+		@include fluidFontSize(10px, 16px, 1024px, 1620px);
+	}
 	.cube {
-		width: 243px;
-		height: 243px;
+		width: 15.1875em;
+		height: 15.1875em;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		justify-content: center;
+		color: #fff;
+		@include fluidPadding(2px, 20px, 1024px, 1620px);
+		position: relative;
 		&-side {
 			display: flex;
 			flex-flow: column;
 			align-items: center;
+			font-family: "Arial", sans-serif;
+			@include fluidFontSize(12px, 18px, 1024px, 1620px);
+			line-height: 22px;
+			span {
+				text-transform: uppercase;
+				font-family: "ArialNarrow", sans-serif;
+			}
+			a {
+				color: #fff;
+				text-decoration: underline;
+			}
 		}
-		&:nth-child(1) {
-			background: $accent;
+		&__img {
+			@include fluidWidth(40px, 77px, 1024px, 1620px);
+			img {
+				width: 100%;
+				margin: 0 0 20px;
+			}
+		}
+	}
+	.cube-1 {
+		background: $accent;
+		color: #000;
+		bottom: 0;
+		left: 0;
+		animation: cube-1 2s cubic-bezier(0.42, 0.41, 1, 1);
+		@keyframes cube-1 {
+			from {
+				bottom: -2.5em;
+				left: 2.5em;
+			}
+			to {
+				left: 0;
+				bottom: 0;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 6.3125em;
+			bottom: -2.5625em;
+			right: -6.3125em;
+			height: 17.6875em;
+			clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 86%);
+			background: #dfac03;
+			animation: cube-1-b 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-1-b {
+				from {
+					width: 0;
+					right: 0;
+					clip-path: polygon(0% 0%, 100% 25%, 100% 86%, 0% 86%);
+				}
+				to {
+					width: 6.3125em;
+					right: -6.3125em;
+					clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 86%);
+				}
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 21.5em;
+			bottom: -2.5625em;
+			right: -6.3125em;
+			height: 2.5625em;
+			clip-path: polygon(0% 0%, 71% 0%, 100% 100%, 35% 100%);
+			background: #b88d00;
+			animation: cube-1-a 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-1-a {
+				from {
+					height: 0;
+					bottom: 0;
+					clip-path: polygon(0% 0%, 71% 0%, 71% 100%, 35% 100%);
+				}
+				to {
+					height: 2.5625em;
+					bottom: -2.5625em;
+					clip-path: polygon(0% 0%, 71% 0%, 100% 100%, 35% 100%);
+				}
+			}
+		}
+	}
+	.cube-2 {
+		background: $dark;
+		bottom: 0;
+		left: 1.25em;
+		animation: cube-2 2s cubic-bezier(0.42, 0.41, 1, 1);
+		@keyframes cube-2 {
+			from {
+				bottom: -2.5em;
+				left: 2.5em;
+			}
+			to {
+				left: 1.25em;
+				bottom: 0;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 2.5625em;
+			bottom: -2.5625em;
+			right: -2.5em;
+			height: 17.6875em;
+			clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 86%);
+			background: #3d3c3c;
+			animation: cube-2-b 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-2-b {
+				from {
+					width: 0;
+					right: 0;
+					clip-path: polygon(0% 0%, 100% 25%, 100% 86%, 0% 86%);
+				}
+				to {
+					width: 2.5625em;
+					right: -2.5em;
+					clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 86%);
+				}
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 17.75em;
+			bottom: -2.5em;
+			right: -2.5625em;
+			height: 2.5em;
+			clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 25% 100%);
+			background: #303030;
+			animation: cube-2-a 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-2-a {
+				from {
+					height: 0;
+					bottom: 0;
+					clip-path: polygon(0% 0%, 85% 0%, 85% 100%, 25% 100%);
+				}
+				to {
+					height: 2.5em;
+					bottom: -2.5em;
+					clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 25% 100%);
+				}
+			}
+		}
+	}
+	.cube-3 {
+		background: $blue;
+		bottom: 0;
+		animation: cube-3 2s cubic-bezier(0.42, 0.41, 1, 1);
+		@keyframes cube-3 {
+			from {
+				bottom: -2.5em;
+			}
+			to {
+				bottom: 0;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 15.1875em;
+			bottom: -2.5em;
+			left: 0;
+			height: 2.5em;
+			clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%);
+			background: #043a67;
+			animation: cube-3-b 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-3-b {
+				from {
+					height: 0px;
+					bottom: 0;
+				}
+				to {
+					height: 2.5em;
+					bottom: -2.5em;
+				}
+			}
+		}
+	}
+	.cube-4 {
+		background: $accent;
+		color: #000;
+		bottom: 0;
+		left: -1.25em;
+		animation: cube-4 2s cubic-bezier(0.42, 0.41, 1, 1);
+		@keyframes cube-4 {
+			from {
+				bottom: -2.5em;
+				left: -1.25em;
+			}
+			to {
+				left: -1.25em;
+				bottom: 0;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 2.5625em;
+			bottom: -2.5625em;
+			left: -2.5em;
+			height: 17.6875em;
+			clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 100%);
+			background: #dfac03;
+			animation: cube-4-b 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-4-b {
+				from {
+					width: 0;
+					left: 0;
+					clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 85%);
+				}
+				to {
+					width: 2.5625em;
+					left: -2.5em;
+					clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 100%);
+				}
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 17.75em;
+			bottom: -2.5em;
+			left: -2.5625em;
+			height: 2.5em;
+			clip-path: polygon(14% 0%, 100% 0%, 70% 100%, 0% 100%);
+			background: #b88d00;
+			animation: cube-4-a 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-4-a {
+				from {
+					height: 0;
+					bottom: 0;
+					clip-path: polygon(14% 0%, 100% 0%, 70% 100%, 15% 100%);
+				}
+				to {
+					height: 2.5em;
+					bottom: -2.5em;
+					clip-path: polygon(14% 0%, 100% 0%, 70% 100%, 0% 100%);
+				}
+			}
+		}
+	}
+	.cube-5 {
+		background: $dark;
+		bottom: 0;
+		left: 0;
+		animation: cube-5 2s cubic-bezier(0.42, 0.41, 1, 1);
+		@keyframes cube-5 {
+			from {
+				bottom: -2.5em;
+				left: -2.5em;
+			}
+			to {
+				left: 0;
+				bottom: 0;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 6.3125em;
+			bottom: -2.625em;
+			left: -6.25em;
+			height: 17.825em;
+			clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 100%);
+			background: #3d3c3c;
+			animation: cube-5-b 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-5-b {
+				from {
+					width: 0;
+					left: 0;
+					clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 85%);
+				}
+				to {
+					width: 6.3125em;
+					left: -6.25em;
+					clip-path: polygon(0 25%, 100% 0, 100% 85%, 0% 100%);
+				}
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 21.375em;
+			bottom: -2.5625em;
+			left: -6.125em;
+			height: 2.5625em;
+			clip-path: polygon(28% 0, 100% 0, 71% 100%, 0 100%);
+			background: #303030;
+			animation: cube-5-a 2s cubic-bezier(0.42, 0.41, 1, 1);
+			@keyframes cube-5-a {
+				from {
+					height: 0;
+					bottom: 0;
+					clip-path: polygon(28% 0%, 100% 0%, 70% 100%, 28% 100%);
+				}
+				to {
+					height: 2.5625em;
+					bottom: -2.5625em;
+					clip-path: polygon(28% 0, 100% 0, 71% 100%, 0 100%);
+				}
+			}
 		}
 	}
 }
