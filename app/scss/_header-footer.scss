@@ -24,7 +24,7 @@
 		display: flex;
 		flex-flow: wrap;
 		@media (max-width: 1024px) {
-			padding: 13px 0 12px;
+			padding: 6px 0;
 		}
 		&-left {
 			width: 56%;
@@ -157,6 +157,9 @@
 				left: 40%;
 				z-index: -1;
 				position: absolute;
+				@media (max-width: 1024px) {
+					display: none;
+				}
 			}
 		}
 	}
