@@ -1,0 +1,77 @@
+.five-section {
+	padding: 110px 0 140px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include fluidFontSize(9.5px, 16px, 1024px, 1725px);
+	&__headline {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin: 0 0 90px;
+		p {
+			color: #ffffff;
+			font-family: "Arial", sans-serif;
+			@include fluidFontSize(24px, 36px, 1024px, 1620px);
+			font-style: italic;
+			font-weight: 400;
+			margin: 0 0 0 10px;
+			line-height: 42px;
+		}
+	}
+}
+
+.causes {
+	height: 44.6875em;
+	width: 104em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+}
+.causes-item-wrap:first-child {
+	margin: 150px, 30px, 0, 200px;
+}
+
+.way {
+	position: absolute;
+	width: 91.75em;
+	height: 39.5625em;
+	top: 3.1em;
+	left: 1.5em;
+	background-size: cover;
+	animation: doroga 5s cubic-bezier(0.44, 0.42, 0.49, 0.48);
+}
+
+@keyframes doroga {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 91.75em;
+	}
+}
+
+.causes-item-wrap {
+	position: relative;
+	margin: 0 0 0 30px;
+	.causes-item {
+		display: flex;
+		border: 0.625em solid #fff;
+		border-radius: 50%;
+		width: 11.0625em;
+		height: 11.0625em;
+		box-shadow: 1px 2px 26px 1px rgba(0, 0, 0, 0.69);
+		&__img {
+			clip-path: circle(50% at 50% 50%);
+			img {
+				width: 100%;
+				height: 100%;
+				filter: grayscale(100%);
+			}
+		}
+		&__text {
+			position: absolute;
+		}
+	}
+}

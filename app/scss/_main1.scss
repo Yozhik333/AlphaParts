@@ -102,18 +102,18 @@
 
 .first__headline {
 	h1 {
-		@include fluidFontSize(28px, 42px, 320px, 1024px);
 		@media (max-width: 1024px) {
 			line-height: 46px;
+			@include fluidFontSize(28px, 42px, 320px, 1024px);
 		}
 	}
 	h2 {
 		color: #000;
 		@include fluidFontSize(32px, 48px, 1024px, 1620px);
-		@include fluidFontSize(14px, 32px, 320px, 1024px);
 		line-height: 55px;
 		@media (max-width: 1024px) {
 			line-height: 36px;
+			@include fluidFontSize(14px, 32px, 320px, 1024px);
 		}
 		@media (max-width: 568px) {
 			line-height: 24px;
@@ -179,7 +179,7 @@
 		}
 		.first-circle-wrap {
 			position: relative;
-			@include fluidFontSize(10px, 16px, 320px, 1620px);
+			@include fluidFontSize(10px, 16px, 320px, 1024px);
 			width: 9em;
 			height: 9em;
 			text-align: center;
