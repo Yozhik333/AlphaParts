@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-let offSet = 2900
+let offSet = 2900;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet) {
@@ -78,4 +78,29 @@ window.addEventListener('mousemove', function (e) {
 	let x = e.clientX / window.innerWidth;
 	let y = e.clientY / window.innerHeight;
 	bg2.style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
+});
+
+let bg3 = document.querySelector('.mouse-parallax-bg3');
+window.addEventListener('mousemove', function (e) {
+	let x = e.clientX / window.innerWidth;
+	let y = e.clientY / window.innerHeight;
+	bg3.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+let bg4 = document.querySelector('.mouse-parallax-bg4');
+window.addEventListener('mousemove', function (e) {
+	let x = e.clientX / window.innerWidth;
+	let y = e.clientY / window.innerHeight;
+	bg4.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+
+let offSet2 = 4000;
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > offSet2) {
+		$(".causes-wrap").addClass("animation-five");
+	} else {
+		$(".causes-wrap").removeClass("animation-five");
+	}
 });
