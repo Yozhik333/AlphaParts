@@ -110,13 +110,13 @@ $(window).scroll(function () {
 var modal = document.getElementById('myModal');
 
 
-var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
 
 
 var span = document.getElementsByClassName("close")[0];
 
 
-btn.onclick = function () {
+btn1.onclick = function () {
 	modal.style.display = "block";
 }
 
@@ -134,6 +134,101 @@ window.onclick = function (event) {
 	}
 }
 
-$('#myBtn').click(function () {
+$('#myBtn1').click(function () {
+	$('body').toggleClass('body-hidden');
+});
+
+
+var modal = document.getElementById('myModal');
+
+
+var btn2 = document.getElementById("myBtn2");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn2.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtn2').click(function () {
+	$('body').toggleClass('body-hidden');
+});
+
+
+var modal = document.getElementById('myModal');
+
+
+var btn3 = document.getElementById("myBtn3");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn3.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtn3').click(function () {
+	$('body').toggleClass('body-hidden');
+});
+
+var modal = document.getElementById('myModal');
+
+
+var btn4 = document.getElementById("myBtn4");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn4.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtn4').click(function () {
 	$('body').toggleClass('body-hidden');
 });
