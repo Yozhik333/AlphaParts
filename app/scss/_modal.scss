@@ -1,0 +1,127 @@
+#myBtn {
+	border: none;
+	cursor: pointer;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	margin: auto;
+	padding: 95px 130px 55px;
+	border: 1px solid #fcc409;
+	width: 40%;
+	box-shadow: 2px 5px 53px 4px rgba(0, 0, 0, 0.16);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.close {
+	color: $accent;
+	position: absolute;
+	font-size: 48px;
+	font-weight: bold;
+	top: 0;
+	right: 20px;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	text-align: center;
+	h4 {
+		font-family: "ArialNarrow", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		color: #fcc409;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	p {
+		font-family: "Arial", sans-serif;
+		font-size: 24px;
+		margin: 0;
+		line-height: 24px;
+	}
+}
+
+.modal-body {
+	padding: 25px 0;
+	margin: 20px 0;
+	border-top: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+	&-input {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin: 0 0 10px;
+		}
+		p {
+			font-size: 18px;
+			font-family: "Arial", sans-serif;
+			width: 20%;
+			margin: 0;
+		}
+		input {
+			width: 80%;
+			padding: 7px 7px 9px 10px;
+			border: 1px solid #bababa;
+			font-family: "Arial", sans-serif;
+			font-size: 15px;
+		}
+	}
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	.btn-wrap {
+		margin: 0 auto;
+	}
+}
+
+.body-hidden {
+	overflow: hidden;
+}

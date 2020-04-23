@@ -104,3 +104,36 @@ $(window).scroll(function () {
 		$(".causes-wrap").removeClass("animation-five");
 	}
 });
+
+// Modal window
+
+var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtn').click(function () {
+	$('body').toggleClass('body-hidden');
+});
