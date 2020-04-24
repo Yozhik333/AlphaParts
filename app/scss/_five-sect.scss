@@ -4,6 +4,10 @@
 	background-size: cover;
 	background-position: center;
 	@include fluidFontSize(9.5px, 16px, 1024px, 1725px);
+	@media (max-width: 1024px) {
+		@include fluidFontSize(6px, 9.5px, 320px, 1024px);
+		padding: 6.875em 0 0;
+	}
 	&__headline {
 		display: flex;
 		align-items: flex-end;
@@ -357,13 +361,73 @@
 		justify-content: center;
 		align-items: center;
 		padding: 0 0 0 10em;
+		position: relative;
 		.causes-item-wrap {
 			width: 50%;
-			margin: 0 0 10em;
+			margin: 0 0 6em;
 			display: flex;
 			flex-flow: column-reverse;
+			&:nth-child(3) {
+				.causes-item__arrow {
+					&::before {
+						transform: rotate(0);
+					}
+				}
+			}
+			&:nth-child(4) {
+				.causes-item__arrow {
+					&::before {
+						transform: rotate(0);
+					}
+				}
+			}
+			&:nth-child(6) {
+				.causes-item__arrow {
+					&::before {
+						transform: rotate(0);
+					}
+				}
+			}
 			.causes-item__text {
 				position: static;
+				text-align: center;
+				line-height: 16px;
+				margin: 5em 0 0;
+				min-height: 9em;
+				a {
+					text-decoration: none;
+				}
+				span {
+					font-size: 2em;
+				}
+				p {
+					font-size: 1.8em;
+				}
+				i {
+					font-size: 1.8em;
+				}
+				.btn-wrap {
+					margin: 0 auto;
+					.btn-span {
+						width: 1em;
+						&:nth-child(1) {
+							display: none;
+						}
+						&:nth-child(3) {
+							display: none;
+						}
+					}
+					.btn-detail {
+						padding: 0.375em 1.875em;
+						display: flex;
+						flex-flow: column;
+						font-size: 1em;
+						line-height: 18px;
+						span {
+							font-size: 1.5em;
+						}
+					}
+				}
 			}
 			.causes-item {
 				margin: 0 auto;
@@ -371,10 +435,10 @@
 				&::before {
 					content: "";
 					position: absolute;
-					left: -2.5em;
-					top: -2.5em;
-					right: -2.5em;
-					bottom: -2.5em;
+					left: -3em;
+					top: -3em;
+					right: -3em;
+					bottom: -3em;
 					//width: 5.75em;
 					//height: 15.75em;
 					border: 2px solid #ffffff;
@@ -383,10 +447,127 @@
 				}
 			}
 			.causes-item__arrow {
-				bottom: 3.6em;
-				top: auto;
+				top: 12em;
+				z-index: 1;
+				background-color: #444548;
+				width: 3em;
+				height: 3em;
 				left: 50%;
 				transform: translateX(-50%);
+				&::before {
+					width: 1.525em;
+					height: 2.675em;
+					left: 0.6em;
+					top: 1.0875em;
+				}
+			}
+		}
+		.machine-wrap {
+			transform: rotate(90deg) translate(0);
+			top: 8em;
+			width: 13em;
+			left: -4em;
+			z-index: 1;
+		}
+		.start,
+		.finish {
+			font-size: 3em;
+			transform: rotate(-90deg);
+			&::before {
+				transform: rotate(90deg);
+				width: 2em;
+				height: 2em;
+			}
+		}
+		.start {
+			top: 3.5em;
+			left: -0.6em;
+			&::before {
+				left: 3.5em;
+				top: 0.6em;
+			}
+		}
+		.finish {
+			left: -0.6em;
+			right: auto;
+			top: auto;
+			bottom: 6.5em;
+			&::before {
+				right: auto;
+				top: 0.6em;
+				left: -2.5em;
+			}
+		}
+	}
+}
+
+.way-mobile {
+	display: none;
+	@media (max-width: 1024px) {
+		display: block;
+		position: absolute;
+		width: 7em;
+		height: 85em;
+		top: 3.1em;
+		left: -0.5em;
+		background-size: cover;
+		.way-mobile-yellow {
+			width: 2.825em;
+			height: 14em;
+			position: absolute;
+			left: 2em;
+			top: 2.2em;
+			background-size: 100%;
+		}
+	}
+}
+
+.animation-five-mobile {
+	.machine-wrap {
+		animation: machine-mobile 4.4s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+		@keyframes machine-mobile {
+			0% {
+				top: 8em;
+			}
+			100% {
+				top: 65em;
+			}
+		}
+	}
+	.way-mobile-yellow {
+		animation: doroga-mobile 5s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+		@keyframes doroga-mobile {
+			0% {
+				height: 8em;
+			}
+			100% {
+				height: 69em;
+			}
+		}
+	}
+	.causes-item {
+		&:nth-child(2) {
+			animation: causes 5s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+			@keyframes causes {
+				0% {
+					filter: grayscale(100%);
+				}
+				100% {
+					filter: grayscale(0);
+				}
+			}
+		}
+		&__arrow {
+			&::before {
+				animation: arrow 5s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+				@keyframes arrow {
+					0% {
+						background: #fff;
+					}
+					100% {
+						background: #fcc409;
+					}
+				}
 			}
 		}
 	}

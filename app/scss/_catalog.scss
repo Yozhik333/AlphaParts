@@ -15,6 +15,7 @@
 	}
 	@media (max-width: 1024px) {
 		height: 103px;
+		overflow-x: hidden;
 		&__back {
 			display: block;
 			position: relative;
@@ -240,7 +241,7 @@
 	background: $dark;
 	color: #fff;
 	grid-template-rows: 60px;
-	grid-template-columns: 65px 205px 138px 130px 114px 273px 1fr;
+	grid-template-columns: 65px 300px 180px 180px 180px 1fr;
 	border: 2px solid #e4e4e4;
 	@media (max-width: 1140px) {
 		display: none;
@@ -273,19 +274,18 @@
 .table-body {
 	display: grid;
 	grid-template-rows: 60px;
-	grid-template-columns: 65px 205px 138px 130px 114px 273px 1fr;
+	grid-template-columns: 65px 300px 180px 180px 180px 1fr;
 	font-family: "Arial", sans-serif;
 	border-left: 2px solid #e4e4e4;
 	border-right: 2px solid #e4e4e4;
 	@media (max-width: 1140px) {
-		grid-template-rows: 60px 60px 60px 60px 60px;
+		grid-template-rows: 60px 60px 60px 60px;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas:
 			"vendor-code btn"
 			"cell1 cell1"
 			"cell2 cell2"
-			"cell3 cell3"
-			"cell4 cell4";
+			"cell3 cell3";
 		margin: 0 0 40px;
 		.area-cell1 {
 			grid-area: cell1;
@@ -526,6 +526,9 @@
 
 .consultation {
 	padding: 197px 0 130px;
+	@media (max-width: 1024px) {
+		overflow-x: hidden;
+	}
 	&-wrap {
 		display: flex;
 		position: relative;

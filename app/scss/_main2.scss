@@ -4,7 +4,7 @@
 	@media (max-width: 1024px) {
 		padding-top: 0;
 		padding-bottom: 0;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 	&__headline {
 		display: flex;
@@ -195,17 +195,22 @@
 				left: -330px;
 				text-align: right;
 				top: 50px;
+				span {
+					display: none;
+				}
 				a {
 					color: #000;
+					text-decoration: none;
 				}
 			}
 		}
 		@media (max-width: 568px) {
 			.cube-text {
-				left: -220px;
+				left: -13em;
 				text-align: right;
 				bottom: -20px;
 				width: 160px;
+				@include fluidFontSize(13px, 16px, 320px, 568px);
 			}
 		}
 		&::before {
@@ -811,6 +816,42 @@
 		left: 290px;
 		bottom: 0;
 		font-size: 20px;
+		a {
+			text-decoration: none;
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+		.btn-wrap {
+			margin: 0 auto;
+			.btn-span {
+				width: 1em;
+				&:nth-child(1) {
+					display: none;
+				}
+				&:nth-child(4) {
+					display: block !important;
+				}
+				&:nth-child(3) {
+					display: none;
+				}
+			}
+			.btn-detail {
+				padding: 0.375em 0.875em;
+				display: flex;
+				flex-flow: column;
+				font-size: 0.7em;
+				line-height: 18px;
+				span {
+					font-size: 1em;
+					display: block;
+				}
+				&::after {
+					left: -10%;
+					right: -8%;
+				}
+			}
+		}
 	}
 	@media (max-width: 568px) {
 		position: absolute;

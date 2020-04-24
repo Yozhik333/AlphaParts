@@ -94,6 +94,19 @@ window.addEventListener('mousemove', function (e) {
 	bg4.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 });
 
+let bg5 = document.querySelector('.mouse-parallax-bg5');
+window.addEventListener('mousemove', function (e) {
+	let x = e.clientX / window.innerWidth;
+	let y = e.clientY / window.innerHeight;
+	bg5.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
+
+let bg6 = document.querySelector('.mouse-parallax-bg6');
+window.addEventListener('mousemove', function (e) {
+	let x = e.clientX / window.innerWidth;
+	let y = e.clientY / window.innerHeight;
+	bg6.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+});
 
 let offSet2 = 4000;
 
@@ -102,6 +115,16 @@ $(window).scroll(function () {
 		$(".causes-wrap").addClass("animation-five");
 	} else {
 		$(".causes-wrap").removeClass("animation-five");
+	}
+});
+
+let offSet3 = 5000;
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > offSet3) {
+		$(".causes-mobile").addClass("animation-five-mobile");
+	} else {
+		$(".causes-mobile").removeClass("animation-five-mobile");
 	}
 });
 
@@ -170,6 +193,36 @@ $('#myBtn2').click(function () {
 	$('body').toggleClass('body-hidden');
 });
 
+var modal = document.getElementById('myModal');
+
+
+var btnMB2 = document.getElementById("myBtnMB2");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btnMB2.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtnMB2').click(function () {
+	$('body').toggleClass('body-hidden');
+});
 
 var modal = document.getElementById('myModal');
 
@@ -199,6 +252,37 @@ window.onclick = function (event) {
 }
 
 $('#myBtn3').click(function () {
+	$('body').toggleClass('body-hidden');
+});
+
+var modal = document.getElementById('myModal');
+
+
+var btnMB = document.getElementById("myBtnMB");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btnMB.onclick = function () {
+	modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+	modal.style.display = "none";
+	$('body').toggleClass('body-hidden');
+}
+
+
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+		$('body').toggleClass('body-hidden');
+	}
+}
+
+$('#myBtnMB').click(function () {
 	$('body').toggleClass('body-hidden');
 });
 
