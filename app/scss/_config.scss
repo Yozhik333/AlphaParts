@@ -404,6 +404,9 @@ $btn-border-width: 1px !default;
 	position: absolute;
 	bottom: 0;
 	left: 20%;
+	@media (max-width: 1024px) {
+		display: none;
+	}
 }
 .mouse-parallax-bg {
 	position: absolute;
@@ -422,6 +425,9 @@ $btn-border-width: 1px !default;
 	position: absolute;
 	bottom: 0;
 	left: 0%;
+	@media (max-width: 1024px) {
+		display: none;
+	}
 }
 .mouse-parallax-bg2 {
 	position: absolute;
@@ -440,6 +446,11 @@ $btn-border-width: 1px !default;
 	position: absolute;
 	top: 0;
 	right: 0%;
+	@media (max-width: 1024px) {
+		width: 71px;
+		height: 65px;
+		left: 150px;
+	}
 }
 
 .mouse-parallax-bg3 {
@@ -459,6 +470,9 @@ $btn-border-width: 1px !default;
 	position: absolute;
 	bottom: 4em;
 	left: 0%;
+	@media (max-width: 1024px) {
+		display: none;
+	}
 }
 
 .mouse-parallax-bg4 {

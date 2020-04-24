@@ -553,6 +553,7 @@
 	@media (max-width: 1024px) {
 		background-image: none !important;
 		padding: 0 0 50px;
+		overflow-x: hidden;
 	}
 	&::before {
 		content: "";
