@@ -409,7 +409,7 @@
 				.btn-wrap {
 					margin: 0 auto;
 					.btn-span {
-						width: 1em;
+						width: 0.7em;
 						&:nth-child(1) {
 							display: none;
 						}
@@ -418,7 +418,7 @@
 						}
 					}
 					.btn-detail {
-						padding: 0.375em 1.875em;
+						padding: 0.375em 1.575em;
 						display: flex;
 						flex-flow: column;
 						font-size: 1em;

@@ -1,6 +1,9 @@
 .header-catalog {
 	background: #fff;
 	padding: 20px 0 5px;
+	@media (max-width: 1024px) {
+		padding: 0;
+	}
 	.header-cloud {
 		display: none;
 	}
@@ -585,10 +588,12 @@
 	}
 
 	.btn-wrap {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: -95px;
+		@media (max-width: 1024px) {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -95px;
+		}
 	}
 
 	&__img {
