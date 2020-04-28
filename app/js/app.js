@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-let offSet = 2900;
+let offSet = 2800;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet) {
@@ -126,7 +126,7 @@ if (bg6) {
 	});
 }
 
-let offSet2 = 4000;
+let offSet2 = 3900;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet2) {
@@ -136,7 +136,7 @@ $(window).scroll(function () {
 	}
 });
 
-let offSet3 = 5000;
+let offSet3 = 4800;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet3) {

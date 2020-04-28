@@ -206,7 +206,7 @@
 		}
 		@media (max-width: 568px) {
 			.cube-text {
-				left: -13em;
+				left: -14em;
 				text-align: right;
 				bottom: -20px;
 				width: 160px;
@@ -488,11 +488,46 @@
 
 .cube-item {
 	position: relative;
+	.btn-wrap {
+		display: none;
+	}
 	@media (max-width: 1024px) {
 		display: flex;
 		justify-content: space-between;
 		height: 150px;
 		margin: 0 0 50px;
+		.btn-wrap {
+			display: flex;
+			position: absolute;
+			bottom: 30px;
+			left: 20%;
+			@include fluidFontSize(7px, 9px, 568px, 1024px);
+			.btn-span {
+				display: none;
+				&:nth-child(3) {
+					display: block;
+					width: 3em;
+					margin: 0 0 0 3px;
+				}
+			}
+			.btn-detail {
+				display: flex;
+				flex-flow: column;
+				max-height: none;
+				font-size: 1.9em;
+				padding: 0.325em 1em 0.5em 0.5em;
+				&::after {
+					left: -8%;
+					right: -7%;
+				}
+			}
+		}
+	}
+	@media (max-width: 568px) {
+		.btn-wrap {
+			@include fluidFontSize(5.5px, 7px, 320px, 568px);
+			left: 20px;
+		}
 	}
 	&::before {
 		content: "";
@@ -811,9 +846,6 @@
 	a {
 		cursor: pointer;
 	}
-	.btn-wrap {
-		display: none;
-	}
 	@media (max-width: 1024px) {
 		position: absolute;
 		left: 290px;
@@ -823,36 +855,6 @@
 			text-decoration: none;
 			&:nth-child(2) {
 				display: none;
-			}
-		}
-		.btn-wrap {
-			margin: 0 auto;
-			.btn-span {
-				width: 1em;
-				&:nth-child(1) {
-					display: none;
-				}
-				&:nth-child(4) {
-					display: block !important;
-				}
-				&:nth-child(3) {
-					display: none;
-				}
-			}
-			.btn-detail {
-				padding: 0.375em 0.875em;
-				display: flex;
-				flex-flow: column;
-				font-size: 0.7em;
-				line-height: 18px;
-				span {
-					font-size: 1em;
-					display: block;
-				}
-				&::after {
-					left: -10%;
-					right: -8%;
-				}
 			}
 		}
 	}
