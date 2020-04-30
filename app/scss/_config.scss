@@ -189,6 +189,7 @@ $btn-border-width: 1px !default;
 		display: flex;
 		width: max-content;
 		cursor: pointer;
+		position: relative;
 		&:hover {
 			.btn-detail {
 				margin: 0 0 0 -2px;
@@ -246,6 +247,7 @@ $btn-border-width: 1px !default;
 	}
 	&-span {
 		display: block;
+		position: relative;
 		background: $accent;
 		width: 30px;
 		transform: skewX(-27deg);
@@ -380,7 +382,7 @@ $btn-border-width: 1px !default;
 }
 
 .logo-em-header {
-	@include fluidFontSize(11px, 16px, 1024px, 1620px);
+	@include fluidFontSize(10px, 16px, 1024px, 1620px);
 	@media (max-width: 1024px) {
 		font-size: 14px;
 	}
@@ -403,11 +405,12 @@ $btn-border-width: 1px !default;
 	height: 80px;
 	position: absolute;
 	bottom: 0;
-	left: 20%;
+	left: 33%;
 	@media (max-width: 1024px) {
 		display: none;
 	}
 }
+
 .mouse-parallax-bg {
 	position: absolute;
 	background-image: url("../images/dest/stone.png");
@@ -424,7 +427,7 @@ $btn-border-width: 1px !default;
 	height: 134px;
 	position: absolute;
 	bottom: 0;
-	left: 0%;
+	left: -3%;
 	@media (max-width: 1024px) {
 		display: none;
 	}
