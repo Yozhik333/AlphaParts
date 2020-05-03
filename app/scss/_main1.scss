@@ -1,6 +1,21 @@
+.excavator {
+	position: absolute;
+	right: 0;
+	top: -84px;
+	@include fluidFontSize(8px, 16px, 1024px, 1920px);
+	&__img {
+		height: 58.6875em;
+		width: 68.75em;
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .first-section {
 	position: relative;
-	padding: 110px 0 200px;
+	padding: 6.875em 0 12.5em;
+	@include fluidFontSize(5px, 16px, 1024px, 1620px);
 	@media (max-width: 1024px) {
 		padding: 0;
 		overflow: hidden;
@@ -17,7 +32,7 @@
 		position: relative;
 		z-index: 1;
 		.btn-wrap {
-			margin: 77px 0 0 20px;
+			margin: 4.8125em 0 0 1.25em;
 		}
 		@media (max-width: 1024px) {
 			width: 100%;
@@ -41,18 +56,18 @@
 		.background-ellipse {
 			display: none;
 			position: absolute;
-			box-shadow: 1px 2px 49px 2px rgba(0, 0, 0, 0.5);
+			box-shadow: 1px 2px 3.0625em 2px rgba(0, 0, 0, 0.5);
 			background-color: #ffffff;
 			top: 0;
 			border-radius: 50%;
 			&:nth-child(2) {
-				width: 780px;
-				height: 783px;
+				width: 48.75em;
+				height: 48.9375em;
 				opacity: 0.4;
 			}
 			&:nth-child(3) {
-				width: 598px;
-				height: 604px;
+				width: 37.375em;
+				height: 37.75em;
 				opacity: 0.3;
 			}
 			@media (max-width: 1024px) {
@@ -71,7 +86,7 @@
 					top: 125%;
 					width: 150%;
 					height: 150%;
-					box-shadow: 1px -45px 49px -77px rgba(119, 39, 39, 0.5);
+					box-shadow: 1px -2.8125em 3.0625em -4.8125em rgba(119, 39, 39, 0.5);
 				}
 			}
 			@media (max-width: 768px) {
@@ -101,32 +116,29 @@
 }
 
 .first__headline {
+	line-height: 1;
 	h1 {
 		@media (max-width: 1024px) {
-			line-height: 46px;
+			line-height: 1.2;
 			@include fluidFontSize(28px, 42px, 320px, 1024px);
 		}
 	}
 	h2 {
+		line-height: 1.1;
 		color: #000;
-		@include fluidFontSize(32px, 48px, 1024px, 1620px);
-		line-height: 55px;
+		font-size: 3em;
 		@media (max-width: 1024px) {
-			line-height: 36px;
 			@include fluidFontSize(14px, 32px, 320px, 1024px);
-		}
-		@media (max-width: 568px) {
-			line-height: 24px;
+			text-transform: none;
 		}
 	}
 	p {
 		font-family: "Arial", sans-serif;
-		@include fluidFontSize(24px, 38px, 1024px, 1620px);
+		font-size: 2.375em;
 		@media (max-width: 1024px) {
-			line-height: 24px;
-		}
-		@media (max-width: 568px) {
-			font-size: 16px;
+			@include fluidFontSize(14px, 32px, 320px, 1024px);
+			font-weight: 700;
+			font-family: "ArialNarrow", sans-serif;
 		}
 	}
 }
@@ -139,11 +151,12 @@
 	z-index: -1;
 	right: 0;
 	left: 56%;
-	top: -5.3125em;
+	top: -84px;
 	//z-index: -1;
 	//padding: 900px 400px 0 0;
 	min-width: 31.25em;
 	height: 58.75em;
+	@include fluidFontSize(8px, 16px, 1024px, 1920px);
 	&::before {
 		content: "";
 		position: absolute;
@@ -171,7 +184,7 @@
 
 .first__items {
 	display: flex;
-	margin: 40px 0 0;
+	margin: 2.5em 0 0;
 	.first__item-wrap {
 		width: 27%;
 		@media (max-width: 568px) {
@@ -179,7 +192,7 @@
 		}
 		.first-circle-wrap {
 			position: relative;
-			@include fluidFontSize(10px, 16px, 320px, 1024px);
+			@include fluidFontSize(10px, 16px, 1024px, 1620px);
 			width: 9em;
 			height: 9em;
 			text-align: center;
@@ -188,6 +201,9 @@
 			align-items: center;
 			justify-content: center;
 			margin: 0 auto;
+			@media (max-width: 1024px) {
+				@include fluidFontSize(10px, 16px, 320px, 1024px);
+			}
 			&::before {
 				content: "";
 				position: absolute;
@@ -219,6 +235,7 @@
 			.circle-ellipse {
 				position: absolute;
 				display: block;
+				width: 91%;
 				margin: 0 auto;
 				animation-name: rotation;
 				animation-duration: 5s;
@@ -245,10 +262,10 @@
 			}
 		}
 		.first-text {
-			font-size: 24px;
+			font-size: 1.5em;
 			@include fluidFontSize(16px, 24px, 320px, 1024px);
 			text-align: center;
-			line-height: 24px;
+			line-height: 1;
 			margin: 20px 0 0;
 			font-family: "PTSans";
 		}

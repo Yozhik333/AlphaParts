@@ -129,22 +129,48 @@
 			.mail-wrap,
 			.tel-wrap {
 				font-family: "Helvetica", sans-serif;
+				background-color: #fff;
+				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+				width: 2.4375rem;
+				height: 2.1875rem;
+				overflow: hidden;
+				position: relative;
+				transition: 0.4s ease;
+				span {
+					position: absolute;
+					margin-left: 12px;
+				}
 			}
 			.mail-wrap {
-				margin: 0 0 0 33px;
+				padding: 6px 5px 10px 10px;
+				margin: 0 7em 0 13px;
+				svg {
+					width: 20px;
+					fill: $accent;
+					transition: 0.4s ease;
+				}
+				&:hover {
+					width: 13em;
+					svg {
+						fill: $blue;
+					}
+				}
 				@media (max-width: 1024px) {
 					display: none;
 				}
 			}
 			.tel-wrap {
+				padding: 5px 5px 7px 13px;
 				@media (max-width: 568px) {
 					a {
 						font-size: 13px;
 					}
 				}
+				&:hover {
+					width: 12em;
+				}
 			}
 			img {
-				margin: 0 10px 0 0;
 				@media (max-width: 1024px) {
 					display: none;
 				}

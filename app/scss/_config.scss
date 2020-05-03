@@ -75,9 +75,10 @@ body {
 h1 {
 	text-transform: uppercase;
 	color: $accent;
-	@include fluidFontSize(64px, 80px, 1024px, 1620px);
+	//@include fluidFontSize(64px, 80px, 1024px, 1620px);
+	font-size: 5em;
 	font-weight: normal;
-	line-height: 80px;
+	line-height: 1;
 }
 
 h2 {
@@ -183,30 +184,56 @@ $btn-border-width: 1px !default;
 	transition-duration: 0.2s;
 	outline: none !important;
 	text-decoration: none !important;
-	padding: 6px 12px;
+	padding: 0.375em 0.75em;
 	font-family: "Helvetica", sans-serif;
 	&-wrap {
 		display: flex;
 		width: max-content;
 		cursor: pointer;
 		position: relative;
+		overflow: hidden;
+		padding: 0 1em 0.8em;
+		&::before {
+			content: "";
+			position: absolute;
+			background: #fff;
+			opacity: 0.3;
+			top: -0.3125em;
+			bottom: -0.3125em;
+			left: -2em;
+			width: 1em;
+			z-index: 2;
+			transform: skewX(-27deg);
+			animation: button-blink 3s ease infinite;
+			@keyframes button-blink {
+				0% {
+					left: -2em;
+				}
+				50% {
+					left: 100%;
+				}
+				100% {
+					left: 100%;
+				}
+			}
+		}
 		&:hover {
 			.btn-detail {
-				margin: 0 0 0 -2px;
+				margin: 0 0 0 -0.125em;
 				&::before {
 					background: $dark;
 				}
 			}
 			.btn-span {
 				&:not(:first-child) {
-					margin: 0 0 0 5px;
+					margin: 0 0 0 0.3125em;
 				}
 				&:nth-child(1) {
 					background: $dark;
 				}
 				&:nth-child(3) {
 					background: $dark;
-					margin: 0 0 0 -2px;
+					margin: 0 0 0 -0.125em;
 				}
 			}
 		}
@@ -215,12 +242,13 @@ $btn-border-width: 1px !default;
 		display: inline-block;
 		position: relative;
 		font-weight: 400;
-		padding: 14px 23px 12px;
+		padding: 0.875em 1.4375em 0.75em;
 		color: #fff;
-		margin: 0 0 0 4px;
-		max-height: 56px;
+		margin: 0 0 0 0.25em;
+		max-height: 3.5em;
 		transition: 0.3s ease-out;
 		z-index: 1;
+		animation: neon 3s ease-in-out infinite alternate;
 		&::before {
 			content: "";
 			z-index: -1;
@@ -236,20 +264,20 @@ $btn-border-width: 1px !default;
 			content: "";
 			position: absolute;
 			z-index: -2;
-			bottom: 20px;
+			bottom: 1.25em;
 			left: -23%;
 			right: -30%;
 			height: 1px;
 			border-radius: 47%;
 			background: rgba(255, 255, 255, 0);
-			box-shadow: 0px 23px 7px 1px rgba(0, 0, 0, 0.5);
+			box-shadow: 0px 1.4375em 0.4375em 1px rgba(0, 0, 0, 0.5);
 		}
 	}
 	&-span {
 		display: block;
 		position: relative;
 		background: $accent;
-		width: 30px;
+		width: 1.875em;
 		transform: skewX(-27deg);
 		transition: 0.3s ease-out;
 		&:not(:first-child) {
@@ -313,7 +341,7 @@ $btn-border-width: 1px !default;
 			width: 0.25em;
 			height: 3.75em;
 			background: #fff;
-			right: 1.5em;
+			right: 1.4em;
 			transform: skewX(26deg);
 			z-index: 1;
 		}
