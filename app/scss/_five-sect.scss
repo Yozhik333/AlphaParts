@@ -46,6 +46,9 @@
 	top: 3.1em;
 	left: 1.5em;
 	background-size: cover;
+	.way-element {
+		position: absolute;
+	}
 }
 
 .causes-item-wrap {
@@ -288,29 +291,567 @@
 				width: 91.75em;
 			}
 		}
-	}
-	.causes-item {
-		&:nth-child(2) {
-			animation: causes 5s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
-			@keyframes causes {
-				0% {
-					filter: grayscale(100%);
+		&-element {
+			&:nth-child(1) {
+				width: 12.1875em;
+				height: 1.375em;
+				left: 0;
+				top: 10.5em;
+				background-size: cover;
+				animation: wayElement1 0.2s linear both 0s;
+				@keyframes wayElement1 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 12.1875em;
+					}
 				}
-				100% {
-					filter: grayscale(0);
+			}
+			&:nth-child(2) {
+				width: 1.375em;
+				height: 29.2em;
+				left: 16em;
+				top: 10.3em;
+				background-size: 100%;
+				animation: wayElement2 0.3s linear both 1.2s;
+				@keyframes wayElement2 {
+					0% {
+						height: 0;
+					}
+					100% {
+						height: 29.2em;
+					}
+				}
+			}
+			&:nth-child(3) {
+				width: 3.7875em;
+				height: 1.3125em;
+				left: 17.4em;
+				top: 38.275em;
+				background-size: cover;
+				animation: wayElement3 0.2s linear both 2.2s;
+				@keyframes wayElement3 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 3.7875em;
+					}
+				}
+			}
+			&:nth-child(4) {
+				width: 1.4em;
+				height: 16em;
+				left: 21.15em;
+				top: 23.6em;
+				background-size: 100%;
+				animation: wayElement4 0.7s linear both 3s;
+				@keyframes wayElement4 {
+					0% {
+						height: 0;
+						top: 39.5em;
+					}
+					100% {
+						height: 16em;
+						top: 23.6em;
+					}
+				}
+			}
+			&:nth-child(5) {
+				width: 14.8875em;
+				height: 1.3125em;
+				left: 22.5em;
+				top: 23.6em;
+				animation: wayElement5 0.2s linear both 4.2s;
+				@keyframes wayElement5 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 14.8875em;
+					}
+				}
+			}
+			&:nth-child(6) {
+				width: 1.4em;
+				height: 8.9em;
+				left: 37.35em;
+				top: 16em;
+				background-size: 100%;
+				animation: wayElement6 0.5s linear both 5s;
+				@keyframes wayElement6 {
+					0% {
+						height: 0;
+						top: 24.9em;
+					}
+					100% {
+						height: 8.9em;
+						top: 16em;
+					}
+				}
+			}
+			&:nth-child(7) {
+				width: 3.2875em;
+				height: 1.4125em;
+				left: 34.1em;
+				top: 16em;
+				background-size: cover;
+				animation: wayElement7 0.4s linear both 6s;
+				@keyframes wayElement7 {
+					0% {
+						width: 0;
+						left: 37.3em;
+					}
+					100% {
+						width: 3.2875em;
+						left: 34.1em;
+					}
+				}
+			}
+			&:nth-child(8) {
+				width: 1.4em;
+				height: 7em;
+				left: 32.75em;
+				top: 10.4em;
+				background-size: 100%;
+				animation: wayElement8 0.5s linear both 7s;
+				@keyframes wayElement8 {
+					0% {
+						height: 0;
+						top: 17.3em;
+					}
+					100% {
+						height: 7em;
+						top: 10.4em;
+					}
+				}
+			}
+			&:nth-child(9) {
+				width: 9.8875em;
+				height: 1.3125em;
+				left: 34.1em;
+				top: 10.5em;
+				background-size: cover;
+				animation: wayElement9 0.3s linear both 8.2s;
+				@keyframes wayElement9 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 9.8875em;
+					}
+				}
+			}
+			&:nth-child(10) {
+				width: 1.4em;
+				height: 11.4em;
+				left: 42.55em;
+				top: 0em;
+				background-size: 100%;
+				animation: wayElement10 0.5s linear both 9.2s;
+				@keyframes wayElement10 {
+					0% {
+						height: 0;
+						top: 10.4em;
+					}
+					100% {
+						height: 11.4em;
+						top: 0;
+					}
+				}
+			}
+			&:nth-child(11) {
+				width: 5.1875em;
+				height: 1.3125em;
+				left: 43.9em;
+				top: 0.1em;
+				background-size: cover;
+				animation: wayElement11 0.3s linear both 10.4s;
+				@keyframes wayElement11 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 5.1875em;
+					}
+				}
+			}
+			&:nth-child(12) {
+				width: 1.4em;
+				height: 23.7em;
+				left: 49.15em;
+				top: 0;
+				background-size: 100%;
+				animation: wayElement12 0.5s linear both 11s;
+				@keyframes wayElement12 {
+					0% {
+						height: 0;
+					}
+					100% {
+						height: 23.7em;
+					}
+				}
+			}
+			&:nth-child(13) {
+				width: 15.6em;
+				height: 1.3125em;
+				left: 49.15em;
+				top: 23.7em;
+				background-size: 80%;
+				animation: wayElement13 0.5s linear both 12s;
+				@keyframes wayElement13 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 15.6em;
+					}
+				}
+			}
+			&:nth-child(14) {
+				width: 1.4em;
+				height: 12.6em;
+				left: 63.35em;
+				top: 25em;
+				background-size: 100%;
+				animation: wayElement14 0.7s linear both 13s;
+				@keyframes wayElement14 {
+					0% {
+						height: 0;
+					}
+					100% {
+						height: 12.6em;
+					}
+				}
+			}
+			&:nth-child(15) {
+				width: 5.1em;
+				height: 1.3125em;
+				left: 64.65em;
+				top: 36.3em;
+				background-size: cover;
+				animation: wayElement15 0.5s linear both 14.3s;
+				@keyframes wayElement15 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 5.1em;
+					}
+				}
+			}
+			&:nth-child(16) {
+				width: 1.4em;
+				height: 27.6em;
+				left: 69.75em;
+				top: 10em;
+				background-size: 100%;
+				animation: wayElement16 0.3s linear both 15.2s;
+				@keyframes wayElement16 {
+					0% {
+						height: 0;
+						top: 37.6em;
+					}
+					100% {
+						height: 27.6em;
+						top: 10em;
+					}
+				}
+			}
+			&:nth-child(17) {
+				width: 6.9em;
+				height: 1.3125em;
+				left: 71.35em;
+				top: 10.2em;
+				background-size: cover;
+				animation: wayElement17 0.5s linear both 16.3s;
+				@keyframes wayElement17 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 6.9em;
+					}
+				}
+			}
+			&:nth-child(18) {
+				width: 1.4em;
+				height: 5em;
+				left: 78.25em;
+				top: 10.1em;
+				background-size: 100%;
+				animation: wayElement18 0.3s linear both 17.2s;
+				@keyframes wayElement18 {
+					0% {
+						height: 0;
+					}
+					100% {
+						height: 5em;
+					}
+				}
+			}
+			&:nth-child(19) {
+				width: 4.3em;
+				height: 1.3125em;
+				left: 79.65em;
+				top: 13.7em;
+				background-size: cover;
+				animation: wayElement19 0.5s linear both 18.3s;
+				@keyframes wayElement19 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 4.3em;
+					}
+				}
+			}
+			&:nth-child(20) {
+				width: 1.4em;
+				height: 5em;
+				left: 82.55em;
+				top: 14.9em;
+				background-size: 100%;
+				animation: wayElement20 0.5s linear both 19s;
+				@keyframes wayElement20 {
+					0% {
+						height: 0;
+					}
+					100% {
+						height: 5em;
+					}
+				}
+			}
+			&:nth-child(21) {
+				width: 4.3em;
+				height: 1.3125em;
+				left: 87.35em;
+				top: 23.7em;
+				background-size: cover;
+				animation: wayElement21 1s linear both 20.3s;
+				@keyframes wayElement21 {
+					0% {
+						width: 0;
+					}
+					100% {
+						width: 4.3em;
+					}
 				}
 			}
 		}
-
-		&__arrow {
-			&::before {
-				animation: arrow 5s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
-				@keyframes arrow {
-					0% {
-						background: #fff;
+	}
+	.causes-item-wrap {
+		&:nth-child(2) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes1 4s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+					@keyframes causes1 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						10% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						30% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
 					}
-					100% {
-						background: #fcc409;
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow1 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+						@keyframes arrow1 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes2 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 4.3s;
+					@keyframes causes2 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						20% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+					}
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow2 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 4.3s;
+						@keyframes arrow2 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(4) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes3 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8.7s;
+					@keyframes causes3 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						20% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+					}
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow3 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8.7s;
+						@keyframes arrow3 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(5) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes4 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12s;
+					@keyframes causes4 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						20% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+					}
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow4 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12s;
+						@keyframes arrow4 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(6) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes5 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 15.5s;
+					@keyframes causes5 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						20% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+					}
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow5 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 15.5s;
+						@keyframes arrow5 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(7) {
+			.causes-item {
+				&:nth-child(2) {
+					animation: causes6 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 19.5s;
+					@keyframes causes6 {
+						0% {
+							filter: grayscale(100%);
+							transform: scale(1);
+						}
+						20% {
+							filter: grayscale(100%);
+							transform: scale(1.1);
+						}
+						100% {
+							filter: grayscale(0);
+							transform: scale(1);
+						}
+					}
+				}
+
+				&__arrow {
+					&::before {
+						animation: arrow6 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 19.5s;
+						@keyframes arrow6 {
+							0% {
+								background: #fff;
+							}
+							100% {
+								background: #fcc409;
+							}
+						}
 					}
 				}
 			}

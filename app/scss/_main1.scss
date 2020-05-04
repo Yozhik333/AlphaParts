@@ -33,6 +33,7 @@
 		z-index: 1;
 		.btn-wrap {
 			margin: 4.8125em 0 0 1.25em;
+			@include fluidFontSize(14px, 16px, 1024px, 1620px);
 		}
 		@media (max-width: 1024px) {
 			width: 100%;
@@ -259,11 +260,16 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				img {
+					width: 100%;
+				}
 			}
 		}
 		.first-text {
-			font-size: 1.5em;
-			@include fluidFontSize(16px, 24px, 320px, 1024px);
+			font-size: 1.9em;
+			@media (max-width: 1024px) {
+				@include fluidFontSize(16px, 24px, 320px, 1024px);
+			}
 			text-align: center;
 			line-height: 1;
 			margin: 20px 0 0;

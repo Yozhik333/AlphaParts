@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="img/dest/preview.jpg">
-	<link rel="stylesheet" href="css/app.min.css">
 	<link rel="stylesheet" href="css/send.css">
+	<link rel="stylesheet" href="css/app.min.css">
+
 
 </head>
 
@@ -32,11 +33,11 @@
 					<nav class="top-line">
 						<ul>
 							<li><a href="/">Главная</a></li>
-							<li><a href="#second-section">Товары</a></li>
-							<li><a href="#third-section">О нас</a></li>
-							<li><a href="#four-section">Процесс работы</a></li>
-							<li><a href="#five-section">Наши преимущества</a></li>
-							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="index.php#second-section">Товары</a></li>
+							<li><a href="index.php#third-section">О нас</a></li>
+							<li><a href="index.php#four-section">Процесс работы</a></li>
+							<li><a href="index.php#five-section">Наши преимущества</a></li>
+							<li><a href="catalog.php">Каталог</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -49,7 +50,7 @@
 					</div>
 					<div class="mail-wrap">
 						<a href="mailto:sales@alphaparts.kz">
-							<?xml version="1.0" ?><svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64"
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64"
 								xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g id="Glyph_copy_2">
 									<path
@@ -188,7 +189,7 @@
 							заданием. Имеется большой выбор готовых запасных частей таких брендов, как <br>
 							<span>Metso, Sandvik, Terex, Minerals, Fintec, Extec, Finlay, McCloskey, Cedarapids, Hartl, Kleemann и
 								др.</span></p>
-						<a href="catalog.html" class="btn btn-black">Подробнее</a>
+						<a href="catalog.php" class="btn btn-black">Подробнее</a>
 					</div>
 				</div>
 				<div class="item-main">
@@ -202,7 +203,7 @@
 							для конвейеров</h3>
 						<p>Долговечные качественные запчасти для конвейеров по невысоким ценам. Вся продукция соответствует
 							действующим стандартам и технологическим требованиям оборудования. </p>
-						<a href="catalog.html" class="btn btn-black">Подробнее</a>
+						<a href="catalog.php" class="btn btn-black">Подробнее</a>
 					</div>
 				</div>
 				<div class="item-sidebar">
@@ -222,7 +223,7 @@
 						<h3>Сервисные услуги</h3>
 						<p>Помимо заказа запчастей можно воспользоваться услугами по сервисному обслуживанию техники: консультация,
 							диагностика, ремонт оборудования с дальнейшими рекомендациями по эксплуатации.</p>
-						<a href="catalog.html" class="btn btn-black">Подробнее</a>
+						<a href="catalog.php" class="btn btn-black">Подробнее</a>
 					</div>
 				</div>
 				<div class="item-footer">
@@ -236,7 +237,7 @@
 							мобильных дробильно-сортировочных комплексов</h3>
 						<p>Предлагаем высококачественные запчасти, прошедшие строгий контроль качества, чтобы сократить Ваши затраты
 							на ремонт и замену основных составляющих дробилок. </p>
-						<a href="catalog.html" class="btn btn-black">Подробнее</a>
+						<a href="catalog.php" class="btn btn-black">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -707,7 +708,7 @@
 
 		<div class="modal-content">
 			<div class="preloader">
-				<img src="images/src/loader.gif" alt="">
+				<img src="images/src/loader.gif" alt="Предзагрузка">
 			</div>
 			<div class="thank_div modal-header">
 				<p>Спасибо ваша заявка принята!</p>

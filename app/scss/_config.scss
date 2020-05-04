@@ -429,8 +429,8 @@ $btn-border-width: 1px !default;
 }
 
 .mouse-parallax {
-	width: 73px;
-	height: 80px;
+	width: 4.5625em;
+	height: 5em;
 	position: absolute;
 	bottom: 0;
 	left: 33%;
@@ -451,8 +451,8 @@ $btn-border-width: 1px !default;
 }
 
 .mouse-parallax2 {
-	width: 142px;
-	height: 134px;
+	width: 8.875em;
+	height: 8.375em;
 	position: absolute;
 	bottom: 0;
 	left: -3%;
@@ -472,8 +472,9 @@ $btn-border-width: 1px !default;
 }
 
 .mouse-parallax3 {
-	width: 142px;
-	height: 134px;
+	@include fluidFontSize(12px, 16px, 1024px, 1620px);
+	width: 8.875em;
+	height: 8.375em;
 	position: absolute;
 	top: 0;
 	right: 0%;
@@ -497,8 +498,9 @@ $btn-border-width: 1px !default;
 }
 
 .mouse-parallax4 {
-	width: 142px;
-	height: 134px;
+	@include fluidFontSize(12px, 16px, 1024px, 1620px);
+	width: 8.875em;
+	height: 8.375em;
 	position: absolute;
 	bottom: 4em;
 	left: 0%;

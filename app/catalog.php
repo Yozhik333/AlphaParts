@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="img/dest/preview.jpg">
+	<link rel="stylesheet" href="css/send.css">
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -30,25 +31,36 @@
 					</a>
 					<nav class="top-line">
 						<ul>
-							<li><a href="/">Главная</a></li>
-							<li><a href="index.html#second-section">Товары</a></li>
-							<li><a href="index.html#third-section">О нас</a></li>
-							<li><a href="index.html#four-section">Процесс работы</a></li>
-							<li><a href="index.html#five-section">Наши преимущества</a></li>
-							<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="/">Главная</a></li>
+							<li><a href="index.php#second-section">Товары</a></li>
+							<li><a href="index.php#third-section">О нас</a></li>
+							<li><a href="index.php#four-section">Процесс работы</a></li>
+							<li><a href="index.php#five-section">Наши преимущества</a></li>
+							<li><a href="catalog.php">Каталог</a></li>
 						</ul>
 					</nav>
 				</div>
 				<!-- /.header__flex-left -->
 				<div class="header__flex-right">
-					<div class="tel-wrap">
-						<a href="tel:+7 708 905 24 25"><img src="images/dest/tel.svg" alt="Позвонить">+7 708 905 24 25</a>
+				<div class="tel-wrap">
+						<a href="tel:+7 708 905 24 25">
+							<img src="images/dest/tel.svg" alt="Позвонить">
+							<span>+7 708 905 24 25</span></a>
 					</div>
 					<div class="mail-wrap">
-						<a href="mailto:sales@alphaparts.kz"><img src="images/dest/mail.png"
-								alt="Написать на почту">sales@alphaparts.kz</a>
+						<a href="mailto:sales@alphaparts.kz">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64"
+								xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="Glyph_copy_2">
+									<path
+										d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+									<path
+										d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+								</g>
+							</svg>
+							<span>sales@alphaparts.kz</span></a>
 					</div>
-					<div class="select-main-wrap">
+					<!--<div class="select-main-wrap">
 						<div class="select">
 							<select name="language" id="">
 								<option value="1" selected>RU</option>
@@ -56,7 +68,7 @@
 								<option value="3">EN</option>
 							</select>
 						</div>
-					</div>
+					</div>-->
 					<div class="header-cloud"></div>
 				</div>
 				<!-- /.header__flex-right -->
@@ -849,34 +861,43 @@
 
 
 		<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h4>Оставьте свои контакты,</h4>
-				<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
+			<div class="preloader">
+				<img src="images/src/loader.gif" alt="Предзагрузка">
 			</div>
-			<div class="modal-body">
-				<div class="modal-body-input">
-					<p>Имя:</p>
-					<input type="text" placeholder="Введите имя">
+			<div class="thank_div modal-header">
+				<p>Спасибо ваша заявка принята!</p>
+			</div>
+			<form id="sendForm">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h4>Оставьте свои контакты,</h4>
+					<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
 				</div>
-				<div class="modal-body-input">
-					<p>Номер:</p>
-					<input type="text" placeholder="Введите номер">
+				<div class="modal-body">
+					<div class="modal-body-input">
+						<p>Имя:</p>
+						<input type="text" name="name" placeholder="Введите имя">
+					</div>
+					<div class="modal-body-input">
+						<p>Номер:</p>
+						<input type="text" name="phone" placeholder="Введите номер">
+					</div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<a class="btn-wrap">
-					<span class="btn-span"></span>
-					<div class="btn btn-detail">Отправить</div>
-					<span class="btn-span"></span>
-					<span class="btn-span"></span>
-				</a>
-			</div>
+				<div class="modal-footer">
+					<a onclick="sendForm(event)" class="btn-wrap">
+						<span class="btn-span"></span>
+						<div class="btn btn-detail">Отправить</div>
+						<span class="btn-span"></span>
+						<span class="btn-span"></span>
+					</a>
+				</div>
+			</form>
 		</div>
 
 	</div>
 
 	<script src="js/app.min.js"></script>
+	<script src="js/submitForm.js"></script>
 
 </body>
 

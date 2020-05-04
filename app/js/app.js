@@ -126,7 +126,7 @@ if (bg6) {
 	});
 }
 
-let offSet2 = 3900;
+let offSet2 = 3400;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet2) {
