@@ -3,6 +3,9 @@
 	right: 0;
 	top: -84px;
 	@include fluidFontSize(8px, 16px, 1024px, 1920px);
+	@media (max-width: 1024px) {
+		display: none;
+	}
 	&__img {
 		height: 58.6875em;
 		width: 68.75em;
@@ -261,7 +264,7 @@
 				align-items: center;
 				justify-content: center;
 				img {
-					width: 100%;
+					width: 50%;
 				}
 			}
 		}
@@ -536,6 +539,7 @@
 			&-img--one {
 				max-width: initial;
 				box-shadow: none;
+				@include fluidHeight(177px, 328px, 320px, 1024px);
 			}
 			&::before {
 				display: none;

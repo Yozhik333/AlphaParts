@@ -452,7 +452,29 @@
 
 			<div class="causes-wrap animation-five">
 				<div class="causes" style="background-image: url(../images/dest/five-sect-bg.png);">
-					<div class="way" style="background-image: url(../images/dest/doroga.png);"></div>
+					<div class="way">
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-2.png);"></div>
+						<div class="way-element" style="background-image: url(../images/dest/way-element-1.png);"></div>
+					</div>
 					<div class="causes-item-wrap">
 						<div class="causes-item__text">
 							<div class="causes-item__arrow"></div>
