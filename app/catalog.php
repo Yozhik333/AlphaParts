@@ -91,6 +91,17 @@
 							</select>
 						</div>
 					</div>-->
+					<div class="dropdown show">
+						<a class="btn btn-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<img src="images/dest/flag-1.png" alt="X"> Русский
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X"> Қазақ</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X"> English</a>
+						</div>
+					</div>
 					<div class="header-cloud"></div>
 				</div>
 				<!-- /.header__flex-right -->
@@ -966,6 +977,8 @@
 
 	<script src="js/app.min.js"></script>
 	<script src="js/submitForm.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 
