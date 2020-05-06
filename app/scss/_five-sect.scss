@@ -1118,7 +1118,9 @@
 
 				.btn-wrap {
 					margin: 0 auto;
-
+					&::before {
+						display: none;
+					}
 					.btn-span {
 						width: 0.7em;
 
@@ -1137,7 +1139,9 @@
 						flex-flow: column;
 						font-size: 1em;
 						line-height: 18px;
-
+						&::after {
+							display: none;
+						}
 						span {
 							font-size: 1.5em;
 						}
