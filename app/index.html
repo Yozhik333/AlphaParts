@@ -83,13 +83,25 @@
 					</div>
 					<!--<div class="select-main-wrap">
 						<div class="select">
-							<select name="language" id="">
-								<option value="1" selected>RU</option>
-								<option value="2">KZ</option>
-								<option value="3">EN</option>
+							<select name="language">
+								<option value="1" selected><img src="images/dest/flag-1.png" alt="Х">Русский</option>
+								<option value="2"><img src="images/dest/flag-2.png" alt="Х">Қазақ</option>
+								<option value="3"><img src="images/dest/flag-3.png" alt="Х">English</option>
 							</select>
 						</div>
 					</div>-->
+					<div class="dropdown show">
+						<a class="btn btn-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Языки
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-1.png" alt="X"> Русский</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X"> Қазақ</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X"> English</a>
+						</div>
+					</div>
 					<div class="header-cloud"></div>
 				</div>
 				<!-- /.header__flex-right -->
@@ -824,6 +836,8 @@
 	</div>
 
 	<script src="js/app.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 

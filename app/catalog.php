@@ -42,15 +42,15 @@
 				</div>
 				<!-- /.header__flex-left -->
 				<div class="header__flex-right">
-				<div class="tel-wrap">
+					<div class="tel-wrap">
 						<a href="tel:+7 708 905 24 25">
 							<img src="images/dest/tel.svg" alt="Позвонить">
 							<span>+7 708 905 24 25</span></a>
 					</div>
 					<div class="mail-wrap">
 						<a href="mailto:sales@alphaparts.kz">
-							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64"
-								xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g id="Glyph_copy_2">
 									<path
 										d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
@@ -59,6 +59,28 @@
 								</g>
 							</svg>
 							<span>sales@alphaparts.kz</span></a>
+					</div>
+					<div class="inst-wrap">
+						<a href="https://www.instagram.com/">
+							<img class="inst1" src="images/dest/inst-icon.svg" alt="Инстаграм">
+							<img class="inst2" src="images/dest/inst-icon2.svg" alt="Инстаграм">
+						</a>
+					</div>
+					<div class="facebook-wrap">
+						<a href="https://www.facebook.com/">
+							<svg height="1.04167in"
+								style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+								version="1.1" viewBox="0 0 187 187" width="1.04167in" xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<defs>
+								</defs>
+								<g id="Layer_x0020_1">
+									<rect class="fil0" height="187" rx="18" ry="18" width="187" />
+									<path class="fil1"
+										d="M131 79l0 -12c0,-6 4,-7 6,-7 3,0 18,0 18,0l0 -27 -24 0c-27,0 -33,20 -33,32l0 14 -15 0 0 19 0 12 16 0c0,35 0,77 0,77l30 0c0,0 0,-42 0,-77l23 0 1 -12 2 -19 -24 0z" />
+								</g>
+							</svg>
+						</a>
 					</div>
 					<!--<div class="select-main-wrap">
 						<div class="select">
@@ -846,12 +868,58 @@
 	<footer class="footer">
 		<div class="container-xl">
 			<div class="footer__line"></div>
-			<div class="maint">
-				<a href="https://maint.kz">
-					<img src="images/dest/maint.jpg" alt="Разработано Maint">
-				</a>
+			<div class="footer-body">
+				<div class="maint">
+					<a href="https://maint.kz">
+						<img src="images/dest/maint.jpg" alt="Разработано Maint">
+					</a>
+				</div>
+				<!-- /.maint -->
+				<div class="call-wrap">
+					<div class="tel-wrap">
+						<a href="tel:+7 708 905 24 25">
+							<img src="images/dest/tel.svg" alt="Позвонить">
+							<span>+7 708 905 24 25</span></a>
+					</div>
+					<div class="mail-wrap">
+						<a href="mailto:sales@alphaparts.kz">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="Glyph_copy_2">
+									<path
+										d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+									<path
+										d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+								</g>
+							</svg>
+							<span>sales@alphaparts.kz</span></a>
+					</div>
+					<div class="footer-social">
+						<div class="inst-wrap">
+							<a href="https://www.instagram.com/">
+								<img class="inst1" src="images/dest/inst-icon.svg" alt="Инстаграм">
+								<img class="inst2" src="images/dest/inst-icon2.svg" alt="Инстаграм">
+							</a>
+						</div>
+						<div class="facebook-wrap">
+							<a href="https://www.facebook.com/">
+								<svg height="1.04167in"
+									style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+									version="1.1" viewBox="0 0 187 187" width="1.04167in" xml:space="preserve"
+									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs>
+									</defs>
+									<g id="Layer_x0020_1">
+										<rect class="fil0" height="187" rx="18" ry="18" width="187" />
+										<path class="fil1"
+											d="M131 79l0 -12c0,-6 4,-7 6,-7 3,0 18,0 18,0l0 -27 -24 0c-27,0 -33,20 -33,32l0 14 -15 0 0 19 0 12 16 0c0,35 0,77 0,77l30 0c0,0 0,-42 0,-77l23 0 1 -12 2 -19 -24 0z" />
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- /.maint -->
 		</div>
 		<!-- /.container-xl -->
 	</footer>
