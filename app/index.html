@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="img/dest/preview.jpg">
+	<link rel="stylesheet" href="css/send.css">
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -869,8 +870,8 @@
 					<h2>Станьте нашим партнером </h2>
 					<p>и воспользуйтесь преимуществами<br>
 						«Альфа Партс» уже сейчас!<br>
-						Для этого оставьте свои<br>
-						контактные данные.</p>
+						<span>Для этого оставьте свои<br>
+							контактные данные.</span></p>
 				</div>
 				<!-- /.partners__headline -->
 				<a id="myBtn4" class="btn-wrap">
@@ -971,36 +972,56 @@
 
 	<div id="myModal" class="modal">
 
-
 		<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h4>Оставьте свои контакты,</h4>
-				<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
+			<div class="preloader">
+				<img src="images/dest/loader.gif" alt="Предзагрузка">
 			</div>
-			<div class="modal-body">
-				<div class="modal-body-input">
-					<p>Имя:</p>
-					<input type="text" placeholder="Введите имя">
-				</div>
-				<div class="modal-body-input">
-					<p>Номер:</p>
-					<input type="text" placeholder="Введите номер">
-				</div>
-			</div>
-			<div class="modal-footer">
-				<a class="btn-wrap">
-					<span class="btn-span"></span>
-					<div class="btn btn-detail">Отправить</div>
-					<span class="btn-span"></span>
-					<span class="btn-span"></span>
+			<div class="thank_div modal-header-my">
+				<a href="/" class="logo-wrap logo-em-header">
+					<div class="logo" id="logo">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="logo-text">
+						Alpha<br>Parts
+					</div>
 				</a>
+				<p>Спасибо ваша заявка принята!</p>
 			</div>
+			<form id="sendForm">
+				<div class="modal-header-my">
+					<span class="close">&times;</span>
+					<h4>Оставьте свои контакты,</h4>
+					<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
+				</div>
+				<div class="modal-body">
+					<div class="modal-body-input">
+						<p>Имя:</p>
+						<input type="text" name="name" placeholder="Введите имя">
+					</div>
+					<div class="modal-body-input">
+						<p>Номер:</p>
+						<input type="text" name="phone" placeholder="Введите номер">
+					</div>
+				</div>
+				<div class="modal-footer-my">
+					<a onclick="sendForm(event)" class="btn-wrap">
+						<span class="btn-span"></span>
+						<div class="btn btn-detail">Отправить</div>
+						<span class="btn-span"></span>
+						<span class="btn-span"></span>
+					</a>
+				</div>
+			</form>
 		</div>
 
 	</div>
 
 	<script src="js/app.min.js"></script>
+	<script src="js/submitForm.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 

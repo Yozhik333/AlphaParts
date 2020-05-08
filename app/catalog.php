@@ -112,7 +112,7 @@
 	<!-- /.container -->
 
 	<div class="catalog-banner">
-		<a class="catalog-banner__back" href="index.html"><span>&#8249;</span> Назад</a>
+		<a class="catalog-banner__back" href="index.php"><span>&#8249;</span> Назад</a>
 		<div class="filter" style="background-image: url(../images/dest/item-5.jpg);"></div>
 	</div>
 	<!-- /.catalog-banner -->
@@ -854,7 +854,7 @@
 					<img src="images/dest/consultation-bg.png" alt="Проконсультируйтесь менеджером о его наличии.">
 				</div>
 				<div class="consultation__logo">
-					<div href="index.html" class="logo-wrap logo-em-six">
+					<div href="#" class="logo-wrap logo-em-six">
 						<div class="logo" id="logo">
 							<span></span>
 							<span></span>
@@ -941,13 +941,13 @@
 
 		<div class="modal-content">
 			<div class="preloader">
-				<img src="images/src/loader.gif" alt="Предзагрузка">
+				<img src="images/dest/loader.gif" alt="Предзагрузка">
 			</div>
-			<div class="thank_div modal-header">
+			<div class="thank_div modal-header-my">
 				<p>Спасибо ваша заявка принята!</p>
 			</div>
 			<form id="sendForm">
-				<div class="modal-header">
+				<div class="modal-header-my">
 					<span class="close">&times;</span>
 					<h4>Оставьте свои контакты,</h4>
 					<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
@@ -962,7 +962,7 @@
 						<input type="text" name="phone" placeholder="Введите номер">
 					</div>
 				</div>
-				<div class="modal-footer">
+				<div class="modal-footer-my">
 					<a onclick="sendForm(event)" class="btn-wrap">
 						<span class="btn-span"></span>
 						<div class="btn btn-detail">Отправить</div>

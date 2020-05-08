@@ -198,6 +198,7 @@
 			</div>
 		</div>
 
+
 	</section>
 	<!-- /.first-section -->
 
@@ -359,7 +360,7 @@
 			<!-- /.four-section__headline -->
 			<div class="cubes-wrap">
 
-				<div class="cube-item">
+				<div class="cube-item cube-hover1">
 					<div class="cube cube1">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -371,7 +372,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cube-item__text cube-text1">
+					<div class="cube-item__text cube-text1 cube-text-hover1">
 						<p>Шаг</p>
 						<p>01</p>
 						<span></span>
@@ -383,7 +384,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item">
+				<div class="cube-item cube-hover2">
 					<div class="cube cube2">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -394,7 +395,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cube-item__text cube-text2">
+					<div class="cube-item__text cube-text2 cube-text-hover2">
 						<p>Шаг</p>
 						<p>02</p>
 						<span></span>
@@ -403,16 +404,10 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<a id="myBtnMB2" class="btn-wrap">
-							<div class="btn-span"></div>
-							<div class="btn btn-detail"><span>Получите бесплатную</span>консультацию менеджера</div>
-							<div class="btn-span"></div>
-							<div class="btn-span"></div>
-						</a>
 					</div>
 				</div>
 
-				<div class="cube-item">
+				<div class="cube-item cube-hover3">
 					<div class="cube cube3">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -423,7 +418,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cube-item__text cube-text3">
+					<div class="cube-item__text cube-text3 cube-text-hover3">
 						<p>Шаг</p>
 						<p>03</p>
 						<span></span>
@@ -435,7 +430,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item">
+				<div class="cube-item cube-hover4">
 					<div class="cube cube4">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -448,7 +443,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cube-item__text cube-text4">
+					<div class="cube-item__text cube-text4 cube-text-hover4">
 						<p>Шаг</p>
 						<p>04</p>
 						<span></span>
@@ -460,7 +455,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item">
+				<div class="cube-item cube-hover5">
 					<div class="cube cube5">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -473,7 +468,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cube-item__text cube-text5">
+					<div class="cube-item__text cube-text5 cube-text-hover5">
 						<p>Шаг</p>
 						<p>05</p>
 						<span></span>
@@ -484,8 +479,163 @@
 						<span></span>
 					</div>
 				</div>
+
 			</div>
 			<!-- /.cubes-wrap -->
+
+			<div class="cubes-wrap-mobile">
+
+				<div class="mobile-cube-item-wrap">
+					<div class="mobile-cube-item">
+						<div class="mobile-cube">
+							<div class="cube-side-mobile">
+								<div class="mobile-cube__img">
+									<img src="images/dest/cube-1.svg" alt="Оставите контакты на сайте">
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile-cube-text">
+							<p class="step">Шаг 01</p>
+							<span>Оставите</span>
+							<p>контакты на сайте</p>
+						</div>
+
+						<div class="mobile-cube-arrows">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-cube-item-wrap">
+					<div class="mobile-cube-item">
+						<div class="mobile-cube-arrows">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<div class="mobile-cube-text">
+							<p class="step">Шаг 02</p>
+							<a id="myBtnMB2" class="btn-wrap">
+								<div class="btn-span"></div>
+								<div class="btn btn-detail"><span>Получите бесплатную<br></span>консультацию менеджера</div>
+								<div class="btn-span"></div>
+								<div class="btn-span"></div>
+							</a>
+						</div>
+
+						<div class="mobile-cube">
+							<div class="cube-side-mobile">
+								<div class="mobile-cube__img">
+									<img src="images/dest/cube-3.svg" alt="Получите бесплатную консультацию менеджера">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="mobile-cube-item-wrap">
+					<div class="mobile-cube-item">
+						<div class="mobile-cube">
+							<div class="cube-side-mobile">
+								<div class="mobile-cube__img">
+									<img src="images/dest/cube-2.svg" alt="Рассмотрите коммерческое предложение">
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile-cube-text">
+							<p class="step">Шаг 03</p>
+							<span>Рассмотрите</span>
+							<p>коммерческое предложение</p>
+						</div>
+
+						<div class="mobile-cube-arrows">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-cube-item-wrap">
+					<div class="mobile-cube-item">
+						<div class="mobile-cube-arrows">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<div class="mobile-cube-text">
+							<p class="step">Шаг 04</p>
+							<span>Определите</span>
+							<p>
+								сроки поставки и условия<br> договора
+							</p>
+						</div>
+
+						<div class="mobile-cube">
+							<div class="cube-side-mobile">
+								<div class="mobile-cube__img">
+									<img src="images/dest/cube-5.svg" alt="Определите сроки поставки и
+									условия договора">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="mobile-cube-item-wrap">
+					<div class="mobile-cube-item">
+						<div class="mobile-cube">
+							<div class="cube-side-mobile">
+								<div class="mobile-cube__img">
+									<img src="images/dest/cube-4.svg" alt="Доставка по всему СНГ">
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile-cube-text">
+							<p class="step">Шаг 05</p>
+							<span>Получите запчасти</span>
+							<p>
+								с доставкой по всему<br>
+								Казахстану и СНГ
+							</p>
+						</div>
+
+						<div class="mobile-cube-arrows">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.cubes-wrap-mobile -->
+
+		</div>
 		</div>
 		<!-- /.container-xl -->
 	</section>
@@ -721,8 +871,8 @@
 					<h2>Станьте нашим партнером </h2>
 					<p>и воспользуйтесь преимуществами<br>
 						«Альфа Партс» уже сейчас!<br>
-						Для этого оставьте свои<br>
-						контактные данные.</p>
+						<span>Для этого оставьте свои<br>
+							контактные данные.</span></p>
 				</div>
 				<!-- /.partners__headline -->
 				<a id="myBtn4" class="btn-wrap">
@@ -825,13 +975,13 @@
 
 		<div class="modal-content">
 			<div class="preloader">
-				<img src="images/src/loader.gif" alt="Предзагрузка">
+				<img src="images/dest/loader.gif" alt="Предзагрузка">
 			</div>
-			<div class="thank_div modal-header">
+			<div class="thank_div modal-header-my">
 				<p>Спасибо ваша заявка принята!</p>
 			</div>
 			<form id="sendForm">
-				<div class="modal-header">
+				<div class="modal-header-my">
 					<span class="close">&times;</span>
 					<h4>Оставьте свои контакты,</h4>
 					<p>и наш менеджер с Вами свяжется в течении 60 минут! </p>
@@ -846,7 +996,7 @@
 						<input type="text" name="phone" placeholder="Введите номер">
 					</div>
 				</div>
-				<div class="modal-footer">
+				<div class="modal-footer-my">
 					<a onclick="sendForm(event)" class="btn-wrap">
 						<span class="btn-span"></span>
 						<div class="btn btn-detail">Отправить</div>

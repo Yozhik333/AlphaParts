@@ -22,7 +22,7 @@
 			line-height: 50px;
 		}
 		@media (max-width: 1024px) {
-			margin: 33px;
+			margin: 23px 0;
 			h2 {
 				@include fluidFontSize(22px, 33px, 320px, 1024px);
 			}
@@ -1579,7 +1579,7 @@
 
 @media (max-width: 1024px) {
 	.cubes-wrap-mobile {
-		font-size: 16px;
+		@include fluidFontSize(8px, 16px, 320px, 1024px);
 		display: block;
 	}
 
@@ -1786,6 +1786,9 @@
 			}
 			.mobile-cube-text {
 				text-align: right;
+				.step {
+					padding: 0 1.7em 0 0;
+				}
 				.btn-wrap {
 					padding: 0 1.3em 0.8em;
 					.btn-span {

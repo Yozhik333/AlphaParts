@@ -136,7 +136,7 @@ $(window).scroll(function () {
 	}
 });
 
-let offSet3 = 4800;
+let offSet3 = 3700;
 
 $(window).scroll(function () {
 	if ($(this).scrollTop() > offSet3) {

@@ -17,6 +17,7 @@
 			padding: 70px 3em 2.5em;
 			width: 90%;
 			height: auto;
+			//min-height: 20em;
 		}
 		.modal-body-input {
 			p {
@@ -79,7 +80,7 @@
 	cursor: pointer;
 }
 
-.modal-header {
+.modal-header-my {
 	padding: 2px 1em;
 	text-align: center;
 	h4 {
@@ -125,10 +126,13 @@
 	}
 }
 
-.modal-footer {
+.modal-footer-my {
 	padding: 2px 16px;
 	.btn-wrap {
 		margin: 0 auto;
+		@media (max-width: 568px) {
+			font-size: 13.5px;
+		}
 	}
 }
 
