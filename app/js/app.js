@@ -10,60 +10,60 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-let offSet = 2800;
+//let offSet = 2800;
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > offSet) {
-		$(".cube1").addClass("cube-1");
-		$(".cube-text1").addClass("cube-text-1");
+//$(window).scroll(function () {
+//	if ($(this).scrollTop() > offSet) {
+//		$(".cube1").addClass("cube-1");
+//		$(".cube-text1").addClass("cube-text-1");
 
-	} else {
-		$(".cube1").removeClass("cube-1");
-		$(".cube-text1").removeClass("cube-text-1");
+//	} else {
+//		$(".cube1").removeClass("cube-1");
+//		$(".cube-text1").removeClass("cube-text-1");
 
-	}
-});
+//	}
+//});
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > offSet) {
-		$(".cube2").addClass("cube-2");
-		$(".cube-text2").addClass("cube-text-2");
-	} else {
-		$(".cube2").removeClass("cube-2");
-		$(".cube-text2").removeClass("cube-text-2");
+//$(window).scroll(function () {
+//	if ($(this).scrollTop() > offSet) {
+//		$(".cube2").addClass("cube-2");
+//		$(".cube-text2").addClass("cube-text-2");
+//	} else {
+//		$(".cube2").removeClass("cube-2");
+//		$(".cube-text2").removeClass("cube-text-2");
 
-	}
-});
+//	}
+//});
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > offSet) {
-		$(".cube3").addClass("cube-3");
-		$(".cube-text3").addClass("cube-text-3");
-	} else {
-		$(".cube3").removeClass("cube-3");
-		$(".cube-text3").removeClass("cube-text-3");
-	}
-});
+//$(window).scroll(function () {
+//	if ($(this).scrollTop() > offSet) {
+//		$(".cube3").addClass("cube-3");
+//		$(".cube-text3").addClass("cube-text-3");
+//	} else {
+//		$(".cube3").removeClass("cube-3");
+//		$(".cube-text3").removeClass("cube-text-3");
+//	}
+//});
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > offSet) {
-		$(".cube4").addClass("cube-4");
-		$(".cube-text4").addClass("cube-text-4");
-	} else {
-		$(".cube4").removeClass("cube-4");
-		$(".cube-text4").removeClass("cube-text-4");
-	}
-});
+//$(window).scroll(function () {
+//	if ($(this).scrollTop() > offSet) {
+//		$(".cube4").addClass("cube-4");
+//		$(".cube-text4").addClass("cube-text-4");
+//	} else {
+//		$(".cube4").removeClass("cube-4");
+//		$(".cube-text4").removeClass("cube-text-4");
+//	}
+//});
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > offSet) {
-		$(".cube5").addClass("cube-5");
-		$(".cube-text5").addClass("cube-text-5");
-	} else {
-		$(".cube5").removeClass("cube-5");
-		$(".cube-text5").removeClass("cube-text-5");
-	}
-});
+//$(window).scroll(function () {
+//	if ($(this).scrollTop() > offSet) {
+//		$(".cube5").addClass("cube-5");
+//		$(".cube-text5").addClass("cube-text-5");
+//	} else {
+//		$(".cube5").removeClass("cube-5");
+//		$(".cube-text5").removeClass("cube-text-5");
+//	}
+//});
 
 //let bg;
 

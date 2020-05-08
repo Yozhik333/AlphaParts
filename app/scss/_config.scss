@@ -220,6 +220,7 @@ $btn-border-width: 1px !default;
 		}
 		&:hover {
 			.btn-detail {
+				color: #fff;
 				margin: 0 0 0 -0.125em;
 				&::before {
 					background: $dark;
@@ -305,6 +306,7 @@ $btn-border-width: 1px !default;
 			transition: 0.3s ease;
 		}
 		&:hover {
+			color: #fff;
 			&::before {
 				background: $dark;
 			}
