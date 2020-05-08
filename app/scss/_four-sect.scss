@@ -168,6 +168,17 @@
 		background: $dark;
 		bottom: -2.5em;
 		left: 2.5em;
+		.cube-text {
+			color: rgb(245, 245, 245);
+			text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+			animation: pulsate 1.2s linear infinite;
+			@keyframes pulsate {
+				50% {
+					color: #fff;
+					text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+				}
+			}
+		}
 	}
 	.cube-2 {
 		bottom: 0;

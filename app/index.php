@@ -978,6 +978,18 @@
 				<img src="images/dest/loader.gif" alt="Предзагрузка">
 			</div>
 			<div class="thank_div modal-header-my">
+				<a href="/" class="logo-wrap logo-em-header">
+					<div class="logo" id="logo">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="logo-text">
+						Alpha<br>Parts
+					</div>
+				</a>
 				<p>Спасибо ваша заявка принята!</p>
 			</div>
 			<form id="sendForm">
