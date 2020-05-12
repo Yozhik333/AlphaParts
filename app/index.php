@@ -95,12 +95,17 @@
 					<div class="dropdown show">
 						<a class="btn btn-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
-							<img src="images/dest/flag-1.png" alt="X"> Русский
+							<img src="images/dest/flag-1.png" alt="X">
+							<p>Русский</p>
 						</a>
 
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X"> Қазақ</a>
-							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X"> English</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X">
+								<p>Қазақ</p>
+							</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X">
+								<p>English</p>
+							</a>
 						</div>
 					</div>
 					<div class="header-cloud"></div>
@@ -117,7 +122,7 @@
 			<div class="first-section__flex">
 				<div class="first-section__details">
 					<div class="first__headline">
-						<h1>запчасти</h1>
+						<h1>запасные части</h1>
 						<h2>для дробильно-сортировочного<br>
 							оборудования импортного</h2>
 						<p>производства в наличии и под заказ </p>
@@ -226,7 +231,7 @@
 						</div>
 					</div>
 					<div class="item__description">
-						<h3>Запасные части для
+						<h3>Запасные части для<br>
 							дробилок и грохотов</h3>
 						<p>Все изделия для дробилок и грохотов по Вашим индивидуальным требованиям в соответствии с техническим
 							заданием. Имеется большой выбор готовых запасных частей таких брендов, как <br>
@@ -242,7 +247,7 @@
 						</div>
 					</div>
 					<div class="item__description">
-						<h3>Запасные части
+						<h3>Запасные части<br>
 							для конвейеров</h3>
 						<p>Долговечные качественные запчасти для конвейеров по невысоким ценам. Вся продукция соответствует
 							действующим стандартам и технологическим требованиям оборудования. </p>
@@ -360,7 +365,7 @@
 			<!-- /.four-section__headline -->
 			<div class="cubes-wrap">
 
-				<div class="cube-item cube-hover1">
+				<div class="cube-item cube-hover1 cube-anime1">
 					<div class="cube cube1">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -384,7 +389,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item cube-hover2">
+				<div class="cube-item cube-hover2 cube-anime2">
 					<div class="cube cube2">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -407,7 +412,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item cube-hover3">
+				<div class="cube-item cube-hover3 cube-anime3">
 					<div class="cube cube3">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -430,7 +435,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item cube-hover4">
+				<div class="cube-item cube-hover4 cube-anime4">
 					<div class="cube cube4">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -455,7 +460,7 @@
 					</div>
 				</div>
 
-				<div class="cube-item cube-hover5">
+				<div class="cube-item cube-hover5 cube-anime5">
 					<div class="cube cube5">
 						<div class="cube-side cube-front">
 							<div class="cube__img">
@@ -487,7 +492,7 @@
 
 				<div class="mobile-cube-item-wrap">
 					<div class="mobile-cube-item">
-						<div class="mobile-cube">
+						<div class="mobile-cube mobile-cube1">
 							<div class="cube-side-mobile">
 								<div class="mobile-cube__img">
 									<img src="images/dest/cube-1.svg" alt="Оставите контакты на сайте">
@@ -533,7 +538,7 @@
 							</a>
 						</div>
 
-						<div class="mobile-cube">
+						<div class="mobile-cube mobile-cube2">
 							<div class="cube-side-mobile">
 								<div class="mobile-cube__img">
 									<img src="images/dest/cube-3.svg" alt="Получите бесплатную консультацию менеджера">
@@ -546,7 +551,7 @@
 
 				<div class="mobile-cube-item-wrap">
 					<div class="mobile-cube-item">
-						<div class="mobile-cube">
+						<div class="mobile-cube mobile-cube3">
 							<div class="cube-side-mobile">
 								<div class="mobile-cube__img">
 									<img src="images/dest/cube-2.svg" alt="Рассмотрите коммерческое предложение">
@@ -590,7 +595,7 @@
 							</p>
 						</div>
 
-						<div class="mobile-cube">
+						<div class="mobile-cube mobile-cube4">
 							<div class="cube-side-mobile">
 								<div class="mobile-cube__img">
 									<img src="images/dest/cube-5.svg" alt="Определите сроки поставки и
@@ -604,7 +609,7 @@
 
 				<div class="mobile-cube-item-wrap">
 					<div class="mobile-cube-item">
-						<div class="mobile-cube">
+						<div class="mobile-cube mobile-cube5">
 							<div class="cube-side-mobile">
 								<div class="mobile-cube__img">
 									<img src="images/dest/cube-4.svg" alt="Доставка по всему СНГ">

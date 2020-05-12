@@ -156,9 +156,9 @@
 						fill: $blue;
 					}
 				}
-				@media (max-width: 1024px) {
-					display: none;
-				}
+				//@media (max-width: 1024px) {
+				//	display: none;
+				//}
 			}
 			.tel-wrap {
 				padding: 5px 5px 7px 13px;
@@ -166,14 +166,14 @@
 					width: 8.125em;
 				}
 				@media (max-width: 1024px) {
-					box-shadow: none;
-					width: 11em;
-					span {
-						position: relative;
-					}
-					&:hover {
-						width: 11em;
-					}
+					//box-shadow: none;
+					//width: 11em;
+					//span {
+					//	position: relative;
+					//}
+					//&:hover {
+					//	width: 11em;
+					//}
 				}
 				@media (max-width: 568px) {
 					a {
@@ -197,9 +197,9 @@
 				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 				//@include fluidFontSize(16px, 16px, 1024px, 1620px);
 				font-size: 16px;
-				@media (max-width: 1024px) {
-					display: none;
-				}
+				//@media (max-width: 1024px) {
+				//	display: none;
+				//}
 				.inst1 {
 					width: 26px;
 					height: 26px;
@@ -239,9 +239,9 @@
 				background: #fff;
 				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 				transition: 0.3s ease;
-				@media (max-width: 1024px) {
-					display: none;
-				}
+				//@media (max-width: 1024px) {
+				//	display: none;
+				//}
 				svg {
 					width: 38px;
 					height: 38px;
@@ -264,11 +264,11 @@
 					}
 				}
 			}
-			img {
-				@media (max-width: 1024px) {
-					display: none;
-				}
-			}
+			//img {
+			//	@media (max-width: 1024px) {
+			//		display: none;
+			//	}
+			//}
 			.header-cloud {
 				box-shadow: 0px 0px 80px 100px rgba(255, 255, 255, 1);
 				right: 0;

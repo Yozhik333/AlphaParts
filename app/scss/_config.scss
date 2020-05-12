@@ -94,7 +94,7 @@ h3 {
 	@include fluidFontSize(20px, 36px, 1024px, 1620px);
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 1;
 	@include fluidPaddingBottom(25px, 45px, 1024px, 1620px);
 	position: relative;
 	&::before {

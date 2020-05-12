@@ -167,7 +167,7 @@
 			}
 		}
 		@media (max-width: 520px) {
-			top: -50px;
+			top: -20px;
 		}
 	}
 	&__background {
@@ -243,7 +243,7 @@
 	line-height: 1;
 	h1 {
 		@media (max-width: 1024px) {
-			line-height: 1.2;
+			line-height: 1;
 			@include fluidFontSize(28px, 42px, 320px, 1024px);
 		}
 	}
@@ -252,7 +252,7 @@
 		color: #000;
 		font-size: 3em;
 		@media (max-width: 1024px) {
-			@include fluidFontSize(14px, 32px, 320px, 1024px);
+			@include fluidFontSize(16px, 32px, 320px, 1024px);
 			text-transform: none;
 		}
 	}
@@ -260,7 +260,7 @@
 		font-family: "Arial", sans-serif;
 		font-size: 2.375em;
 		@media (max-width: 1024px) {
-			@include fluidFontSize(14px, 32px, 320px, 1024px);
+			@include fluidFontSize(16px, 32px, 320px, 1024px);
 			font-weight: 700;
 			font-family: "ArialNarrow", sans-serif;
 		}
@@ -495,6 +495,9 @@
 			font-style: italic;
 			font-family: "Arial", sans-serif;
 			line-height: 40px;
+			@media (max-width: 1024px) {
+				line-height: 1;
+			}
 		}
 	}
 }
@@ -871,7 +874,8 @@
 		position: relative;
 		width: 50%;
 		@include fluidHeight(280px, 500px, 320px, 1024px);
-		right: -10px;
+		right: 20px;
+		z-index: -1;
 		img {
 			width: 120%;
 			height: 100%;
