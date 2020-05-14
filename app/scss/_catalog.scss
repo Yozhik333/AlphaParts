@@ -605,6 +605,18 @@
 			width: 400px;
 			right: -40px;
 			bottom: -28px;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 4.5em;
+				height: 4.5em;
+				background-color: #fff;
+				border-radius: 50%;
+				right: 30%;
+				top: 50%;
+				transform: translateY(-50%);
+				opacity: 0.5;
+			}
 		}
 		@media (max-width: 768px) {
 			width: 320px;

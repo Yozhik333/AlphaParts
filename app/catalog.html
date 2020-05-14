@@ -94,12 +94,17 @@
 					<div class="dropdown show">
 						<a class="btn btn-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">
-							<img src="images/dest/flag-1.png" alt="X"> Русский
+							<img src="images/dest/flag-1.png" alt="X">
+							<p>Русский</p>
 						</a>
 
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X"> Қазақ</a>
-							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X"> English</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-2.png" alt="X">
+								<p>Қазақ</p>
+							</a>
+							<a class="dropdown-item" href="#"><img src="images/dest/flag-3.png" alt="X">
+								<p>English</p>
+							</a>
 						</div>
 					</div>
 					<div class="header-cloud"></div>

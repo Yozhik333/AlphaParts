@@ -6,7 +6,7 @@
 	}
 	@media (max-width: 1024px) {
 		padding-top: 0;
-		padding-bottom: 0;
+		padding-bottom: 3em;
 		overflow: hidden;
 	}
 	&__headline {
@@ -2789,6 +2789,46 @@
 					background: #4e4e4e;
 				}
 			}
+		}
+	}
+}
+
+.mobile-cube1,
+.mobile-cube3,
+.mobile-cube5 {
+	.cube-side-mobile {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 12.2em;
+			height: 11em;
+			background-image: linear-gradient(to bottom, #d5d5d5 0, rgba(255, 255, 255, 0) 100%);
+			z-index: -1;
+			bottom: -10em;
+			left: 0.3em;
+			clip-path: polygon(27% 0%, 100% 22%, 82% 100%, 0% 100%);
+			transition: 0.4s ease;
+		}
+	}
+}
+
+.mobile-cube2,
+.mobile-cube4 {
+	.cube-side-mobile {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 12.2em;
+			height: 11em;
+			background-image: linear-gradient(to bottom, #d5d5d5 0, rgba(255, 255, 255, 0) 100%);
+			z-index: -1;
+			bottom: -10em;
+			transform: scaleX(-1);
+			left: -2.5em;
+			clip-path: polygon(27% 0%, 100% 22%, 82% 100%, 0% 100%);
+			transition: 0.4s ease;
 		}
 	}
 }

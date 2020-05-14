@@ -27,14 +27,18 @@
 		flex-flow: wrap;
 		@media (max-width: 1024px) {
 			padding: 0.375em 0;
+			flex-flow: nowrap;
 		}
 		&-left {
 			width: 56%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			@media (max-width: 380px) {
-				width: 55%;
+			@media (max-width: 1024px) {
+				width: 100%;
+			}
+			@media (max-width: 568px) {
+				justify-content: flex-start;
 			}
 			.top-line {
 				padding: 1.25em 0 1.125em;
@@ -64,9 +68,10 @@
 							@media (max-width: 1024px) {
 								position: relative;
 								padding: 0 1.875em;
-								//@media (max-width: 568px) {
-								//	padding: 0 0.625em;
-								//}
+								margin: 0 0 0 0.6em;
+								@media (max-width: 568px) {
+									padding: 0 0.625em;
+								}
 								a {
 									color: #fff;
 									font-size: 0.875em;
@@ -124,8 +129,8 @@
 			align-items: center;
 			position: relative;
 			z-index: 1;
-			@media (max-width: 380px) {
-				width: calc(100% - 55%);
+			@media (max-width: 1024px) {
+				width: 100%;
 			}
 			.mail-wrap,
 			.tel-wrap {
@@ -140,6 +145,9 @@
 				span {
 					position: absolute;
 					margin-left: 12px;
+					@media (max-width: 1024px) {
+						display: none;
+					}
 				}
 			}
 			.mail-wrap {
@@ -156,32 +164,39 @@
 						fill: $blue;
 					}
 				}
-				//@media (max-width: 1024px) {
-				//	display: none;
-				//}
+				@media (max-width: 1024px) {
+					width: 2.4em;
+					height: 2.4em;
+					padding: 0.375em 0.3125em 0.625em 0.625em;
+					@include fluidFontSize(12px, 16px, 320px, 1024px);
+					margin: 0 0.5em;
+					svg {
+						width: 1.2em;
+					}
+					&:hover {
+						width: 2.4em;
+					}
+				}
 			}
 			.tel-wrap {
 				padding: 5px 5px 7px 13px;
 				span {
 					width: 8.125em;
 				}
-				@media (max-width: 1024px) {
-					//box-shadow: none;
-					//width: 11em;
-					//span {
-					//	position: relative;
-					//}
-					//&:hover {
-					//	width: 11em;
-					//}
-				}
-				@media (max-width: 568px) {
-					a {
-						font-size: 13px;
-					}
-				}
 				&:hover {
 					width: 12em;
+				}
+				@media (max-width: 1024px) {
+					width: 2.4em;
+					height: 2.4em;
+					padding: 0.375em 0.3125em 0.625em 0.725em;
+					@include fluidFontSize(12px, 16px, 320px, 1024px);
+					img {
+						width: 1em;
+					}
+					&:hover {
+						width: 2.4em;
+					}
 				}
 			}
 			.inst-wrap,
@@ -228,6 +243,20 @@
 						visibility: visible;
 					}
 				}
+				@media (max-width: 1024px) {
+					@include fluidFontSize(13px, 16px, 320px, 1024px);
+					width: 2em;
+					height: 2em;
+					.inst1 {
+						width: 1.2em;
+						height: 1.2em;
+						top: 0.4em;
+						left: 0.42em;
+					}
+					.inst2 {
+						width: 2.4em;
+					}
+				}
 			}
 			.facebook-wrap {
 				transition: 0.3s ease;
@@ -262,6 +291,34 @@
 					.fil1 {
 						fill: #fff;
 					}
+				}
+				@media (max-width: 1024px) {
+					@include fluidFontSize(13px, 16px, 320px, 1024px);
+					width: 2em;
+					height: 2em;
+					margin: 0 0.6em;
+					svg {
+						width: 2em;
+						height: 2em;
+					}
+				}
+			}
+			.dropdown {
+				margin: 0 30px 0 10px;
+				@media (max-width: 1024px) {
+					margin: 0;
+					.btn {
+						font-size: 0.6rem;
+					}
+				}
+				p {
+					display: inline;
+					@media (max-width: 1024px) {
+						display: none;
+					}
+				}
+				.dropdown-menu {
+					min-width: 5rem;
 				}
 			}
 			//img {

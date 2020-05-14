@@ -81,15 +81,54 @@
 			}
 			@media (max-width: 1024px) {
 				@include fluidWidth(400px, 800px, 578px, 1024px);
-				right: -25%;
+				right: -20%;
 				bottom: 47%;
 				top: auto;
 				transform: translateY(50%);
+				&::before {
+					content: "";
+					position: absolute;
+					width: 4em;
+					height: 4em;
+					background-color: #fff;
+					border-radius: 50%;
+					right: 20%;
+					top: 50%;
+					transform: translateY(-50%);
+					opacity: 0.4;
+				}
 			}
 			@media (max-width: 578px) {
 				@include fluidWidth(300px, 400px, 320px, 578px);
 				bottom: 50%;
+				right: -22%;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 4em;
+					height: 4em;
+					background-color: #fff;
+					border-radius: 50%;
+					right: 15%;
+					top: 50%;
+					transform: translateY(-50%);
+					opacity: 0.4;
+				}
+			}
+			@media (max-width: 400px) {
 				right: -28%;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 4em;
+					height: 4em;
+					background-color: #fff;
+					border-radius: 50%;
+					right: 15%;
+					top: 50%;
+					transform: translateY(-50%);
+					opacity: 0.4;
+				}
 			}
 		}
 		&__logo {
