@@ -1,5 +1,5 @@
 .header {
-	@include fluidPaddingTop(15px, 20px, 1024px, 1620px);
+	padding: 0.3em 0 0;
 	position: relative;
 	z-index: 2;
 	@include fluidFontSize(12px, 16px, 1024px, 1620px);
@@ -11,7 +11,7 @@
 		position: absolute;
 		background: $accent;
 		transform: skewX(-25deg);
-		height: 0.5625em;
+		height: 0.3em;
 		left: 0;
 		right: 50%;
 		top: 0;
@@ -21,6 +21,15 @@
 		@media (max-width: 1024px) {
 			display: none;
 		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 4.2em;
+		top: -10%;
+		background-color: #fff;
+		z-index: -1;
 	}
 	&__flex {
 		display: flex;
@@ -41,7 +50,7 @@
 				justify-content: flex-start;
 			}
 			.top-line {
-				padding: 1.25em 0 1.125em;
+				padding: 0.75em 0 1.325em;
 				//padding-right: 6.0625em;
 				z-index: 2;
 				@include fluidPaddingRight(61px, 97px, 1024px, 1680px);
@@ -67,11 +76,8 @@
 						&:last-child {
 							@media (max-width: 1024px) {
 								position: relative;
-								padding: 0 1.875em;
+								padding: 0em 1.3em 0 1em;
 								margin: 0 0 0 0.6em;
-								@media (max-width: 568px) {
-									padding: 0 0.625em;
-								}
 								a {
 									color: #fff;
 									font-size: 0.875em;
@@ -84,7 +90,7 @@
 									position: absolute;
 									box-shadow: 2px -2px 7px 1px rgba(0, 0, 0, 0.1);
 									background: $blue;
-									height: 5.3625em;
+									height: 5.55em;
 									top: -27px;
 									left: 0;
 									transform: skewX(-25deg);
@@ -104,8 +110,8 @@
 							content: "";
 							position: absolute;
 							width: 100%;
-							top: -2.1875em;
-							left: -0.3125em;
+							top: -1em;
+							left: -0.0125em;
 							transform: skewX(-25deg) translateY(-50%);
 							background: $accent;
 							opacity: 0;
@@ -115,7 +121,7 @@
 							&::before {
 								opacity: 1;
 								height: 0.8125em;
-								top: -1.75em;
+								top: -1em;
 							}
 						}
 					}
@@ -129,16 +135,17 @@
 			align-items: center;
 			position: relative;
 			z-index: 1;
+			padding: 0 0 0.3em;
 			@media (max-width: 1024px) {
 				width: 100%;
 			}
 			.mail-wrap,
 			.tel-wrap {
 				font-family: "Helvetica", sans-serif;
-				background-color: #fff;
-				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
-				width: 2.4375rem;
-				height: 2.1875rem;
+				//background-color: #fff;
+				//box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+				width: 2.4375em;
+				height: 1.8em;
 				overflow: hidden;
 				position: relative;
 				transition: 0.4s ease;
@@ -151,10 +158,14 @@
 				}
 			}
 			.mail-wrap {
-				padding: 6px 5px 10px 10px;
-				margin: 0 1em 0 13px;
+				padding: 0px 0 0px 5px;
+				margin: 0 0.5em 0 0.2em;
+				height: 1.8em;
+				@include fluidFontSize(11px, 16px, 1024px, 1620px);
 				svg {
-					width: 20px;
+					@include fluidFontSize(11px, 17px, 1024px, 1620px);
+					width: 1.9em;
+					height: 1.7em;
 					fill: $accent;
 					transition: 0.4s ease;
 				}
@@ -167,11 +178,18 @@
 				@media (max-width: 1024px) {
 					width: 2.4em;
 					height: 2.4em;
-					padding: 0.375em 0.3125em 0.625em 0.625em;
+					//padding: 0.375em 0.3125em 0.625em 0.625em;
+					padding: 0;
 					@include fluidFontSize(12px, 16px, 320px, 1024px);
-					margin: 0 0.5em;
+					margin: 0 0.7em 0 0;
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+					}
 					svg {
-						width: 1.2em;
+						width: 1.8em;
 					}
 					&:hover {
 						width: 2.4em;
@@ -179,7 +197,11 @@
 				}
 			}
 			.tel-wrap {
-				padding: 5px 5px 7px 13px;
+				padding: 1px 5px 0px 13px;
+				@include fluidFontSize(12px, 16px, 1024px, 1620px);
+				img {
+					width: 1.2em;
+				}
 				span {
 					width: 8.125em;
 				}
@@ -189,8 +211,15 @@
 				@media (max-width: 1024px) {
 					width: 2.4em;
 					height: 2.4em;
-					padding: 0.375em 0.3125em 0.625em 0.725em;
+					//padding: 0.375em 0.3125em 0.625em 0.725em;
+					padding: 0;
 					@include fluidFontSize(12px, 16px, 320px, 1024px);
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+					}
 					img {
 						width: 1em;
 					}
@@ -202,39 +231,38 @@
 			.inst-wrap,
 			.facebook-wrap {
 				position: relative;
+				@include fluidFontSize(8px, 15px, 1024px, 1620px);
 			}
 			.inst-wrap {
 				transition: 0.3s ease;
-				width: 38px;
-				height: 38px;
+				width: 2.3em;
+				height: 2.3em;
 				border-radius: 10px;
-				background: #fff;
-				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+				//background: #fff;
+				//box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 				//@include fluidFontSize(16px, 16px, 1024px, 1620px);
-				font-size: 16px;
 				//@media (max-width: 1024px) {
 				//	display: none;
 				//}
 				.inst1 {
 					width: 26px;
 					height: 26px;
-					opacity: 1;
+					opacity: 0;
 					top: 16%;
 					left: 17%;
-
+					display: none;
 					position: absolute;
 					transition: 0.3s ease;
 				}
 				.inst2 {
 					position: relative;
-					left: -7%;
-					top: -8%;
-					width: 44px;
-					opacity: 0;
-					visibility: hidden;
+					width: 100%;
+					opacity: 1;
+					visibility: visible;
 					transition: 0.3s ease;
 				}
 				&:hover {
+					box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 					.inst1 {
 						opacity: 0;
 					}
@@ -244,9 +272,15 @@
 					}
 				}
 				@media (max-width: 1024px) {
-					@include fluidFontSize(13px, 16px, 320px, 1024px);
+					@include fluidFontSize(9px, 16px, 320px, 1024px);
 					width: 2em;
 					height: 2em;
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+					}
 					.inst1 {
 						width: 1.2em;
 						height: 1.2em;
@@ -260,43 +294,49 @@
 			}
 			.facebook-wrap {
 				transition: 0.3s ease;
-				width: 38px;
-				height: 38px;
-				border-radius: 10px;
-				font-size: 16px;
-				margin: 0 13px 0;
-				background: #fff;
-				box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+				width: 2em;
+				height: 2em;
+				border-radius: 3px;
+				margin: 0 1.5em 0 1em;
+				//background: #fff;
+				//box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 				transition: 0.3s ease;
 				//@media (max-width: 1024px) {
 				//	display: none;
 				//}
 				svg {
-					width: 38px;
-					height: 38px;
+					width: 100%;
+					height: 100%;
 					transition: 0.3s ease;
 				}
 				.fil0 {
-					fill: #fff;
-					transition: 0.3s ease;
-				}
-				.fil1 {
 					fill: #485992;
 					transition: 0.3s ease;
 				}
+				.fil1 {
+					fill: #fff;
+					transition: 0.3s ease;
+				}
 				&:hover {
+					box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 					.fil0 {
-						fill: #485992;
+						fill: #445fb6;
 					}
 					.fil1 {
 						fill: #fff;
 					}
 				}
 				@media (max-width: 1024px) {
-					@include fluidFontSize(13px, 16px, 320px, 1024px);
+					@include fluidFontSize(9px, 16px, 320px, 1024px);
 					width: 2em;
 					height: 2em;
-					margin: 0 0.6em;
+					margin: 0 1em 0 1.3em;
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+					}
 					svg {
 						width: 2em;
 						height: 2em;
@@ -426,6 +466,9 @@
 		height: 2.1875rem;
 		position: relative;
 		transition: 0.4s ease;
+		img {
+			width: 1em;
+		}
 		span {
 			position: relative;
 			margin-left: 12px;
@@ -433,10 +476,10 @@
 	}
 	.mail-wrap {
 		padding: 6px 5px 10px 10px;
-		margin: 0 1em 0 13px;
+		margin: 0 0.7em 0 0;
 		width: 13em;
 		svg {
-			width: 20px;
+			width: 1.4em;
 			fill: $accent;
 			transition: 0.4s ease;
 		}
@@ -448,8 +491,11 @@
 		}
 	}
 	.tel-wrap {
-		padding: 5px 5px 7px 13px;
-		width: 11em;
+		padding: 5px 5px 7px 0px;
+		width: 10.6em;
+		&:hover {
+			width: 10.6em;
+		}
 		@media (max-width: 1024px) {
 			box-shadow: none;
 			width: 11em;
@@ -462,46 +508,44 @@
 		}
 		@media (max-width: 568px) {
 			a {
-				font-size: 13px;
+				font-size: 15px;
 			}
-		}
-		&:hover {
-			width: 11em;
 		}
 	}
 	.inst-wrap,
 	.facebook-wrap {
 		position: relative;
+		font-size: 13px;
 	}
 	.inst-wrap {
 		transition: 0.3s ease;
-		width: 38px;
-		height: 38px;
+		width: 2.375em;
+		height: 2.375em;
 		border-radius: 10px;
-		background: #fff;
-		box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+		//background: #fff;
+		//box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 		//@include fluidFontSize(16px, 16px, 1024px, 1620px);
-		font-size: 16px;
 		.inst1 {
-			width: 26px;
-			height: 26px;
+			width: 1.7em;
+			height: 1.7em;
 			opacity: 1;
 			top: 16%;
 			left: 17%;
-
+			display: none;
 			position: absolute;
 			transition: 0.3s ease;
 		}
 		.inst2 {
 			position: relative;
-			left: -7%;
-			top: -8%;
-			width: 44px;
-			opacity: 0;
-			visibility: hidden;
+			left: 0;
+			top: 0;
+			width: 100%;
+			opacity: 1;
+			visibility: visible;
 			transition: 0.3s ease;
 		}
 		&:hover {
+			box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 			.inst1 {
 				opacity: 0;
 			}
@@ -513,30 +557,30 @@
 	}
 	.facebook-wrap {
 		transition: 0.3s ease;
-		width: 38px;
-		height: 38px;
-		border-radius: 10px;
-		font-size: 16px;
+		width: 2em;
+		height: 2em;
+		border-radius: 3px;
 		margin: 0 13px 0;
-		background: #fff;
-		box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+		//background: #fff;
+		//box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 		transition: 0.3s ease;
 		svg {
-			width: 38px;
-			height: 38px;
+			width: 100%;
+			height: 100%;
 			transition: 0.3s ease;
 		}
 		.fil0 {
-			fill: #fff;
-			transition: 0.3s ease;
-		}
-		.fil1 {
 			fill: #485992;
 			transition: 0.3s ease;
 		}
+		.fil1 {
+			fill: #fff;
+			transition: 0.3s ease;
+		}
 		&:hover {
+			box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
 			.fil0 {
-				fill: #485992;
+				fill: #445fb6;
 			}
 			.fil1 {
 				fill: #fff;
@@ -565,6 +609,7 @@
 
 .footer-social {
 	display: flex;
+	align-items: center;
 	@media (max-width: 1024px) {
 		margin: 20px 0 0;
 	}

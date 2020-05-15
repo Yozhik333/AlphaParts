@@ -467,7 +467,7 @@ $btn-border-width: 1px !default;
 	width: 4.5625em;
 	height: 5em;
 	position: absolute;
-	bottom: 0;
+	bottom: 3em;
 	left: 33%;
 	@media (max-width: 1024px) {
 		display: none;
@@ -537,8 +537,8 @@ $btn-border-width: 1px !default;
 	width: 8.875em;
 	height: 8.375em;
 	position: absolute;
-	bottom: 0em;
-	left: 0%;
+	bottom: 9em;
+	left: -5em;
 	@media (max-width: 1024px) {
 		display: none;
 	}
@@ -599,7 +599,7 @@ $btn-border-width: 1px !default;
 	transition: all 0.1s ease;
 }
 
-.btn-white {
-	background-color: #fff;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
-}
+//.btn-white {
+//	background-color: #fff;
+//	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.17);
+//}
