@@ -177,7 +177,7 @@
 			position: absolute;
 			font-family: "Arial", sans-serif;
 			color: #fff;
-			line-height: 28px;
+			line-height: 1.2;
 
 			span {
 				text-transform: uppercase;
@@ -298,7 +298,7 @@
 				left: 0;
 				top: 10.5em;
 				background-size: cover;
-				animation: wayElement1 0.2s linear both 0s;
+				animation: wayElement1 0.6s linear both 0s;
 				@keyframes wayElement1 {
 					0% {
 						width: 0;
@@ -314,7 +314,7 @@
 				left: 16em;
 				top: 10.3em;
 				background-size: 100%;
-				animation: wayElement2 0.3s linear both 1.2s;
+				animation: wayElement2 1s linear both 1s;
 				@keyframes wayElement2 {
 					0% {
 						height: 0;
@@ -330,7 +330,7 @@
 				left: 17.4em;
 				top: 38.275em;
 				background-size: cover;
-				animation: wayElement3 0.2s linear both 2.2s;
+				animation: wayElement3 0.3s linear both 2.2s;
 				@keyframes wayElement3 {
 					0% {
 						width: 0;
@@ -363,7 +363,7 @@
 				height: 1.3125em;
 				left: 22.5em;
 				top: 23.6em;
-				animation: wayElement5 0.2s linear both 4.2s;
+				animation: wayElement5 0.7s linear both 4.2s;
 				@keyframes wayElement5 {
 					0% {
 						width: 0;
@@ -379,7 +379,7 @@
 				left: 37.35em;
 				top: 16em;
 				background-size: 100%;
-				animation: wayElement6 0.5s linear both 5s;
+				animation: wayElement6 0.5s linear both 5.4s;
 				@keyframes wayElement6 {
 					0% {
 						height: 0;
@@ -433,7 +433,7 @@
 				left: 34.1em;
 				top: 10.5em;
 				background-size: cover;
-				animation: wayElement9 0.3s linear both 8.2s;
+				animation: wayElement9 0.3s linear both 8s;
 				@keyframes wayElement9 {
 					0% {
 						width: 0;
@@ -449,7 +449,7 @@
 				left: 42.55em;
 				top: 0em;
 				background-size: 100%;
-				animation: wayElement10 0.5s linear both 9.2s;
+				animation: wayElement10 0.5s linear both 9s;
 				@keyframes wayElement10 {
 					0% {
 						height: 0;
@@ -467,7 +467,7 @@
 				left: 43.9em;
 				top: 0.1em;
 				background-size: cover;
-				animation: wayElement11 0.3s linear both 10.4s;
+				animation: wayElement11 0.3s linear both 10s;
 				@keyframes wayElement11 {
 					0% {
 						width: 0;
@@ -483,7 +483,7 @@
 				left: 49.15em;
 				top: 0;
 				background-size: 100%;
-				animation: wayElement12 0.5s linear both 11s;
+				animation: wayElement12 1.2s linear both 10.6s;
 				@keyframes wayElement12 {
 					0% {
 						height: 0;
@@ -499,7 +499,7 @@
 				left: 49.15em;
 				top: 23.7em;
 				background-size: 80%;
-				animation: wayElement13 0.5s linear both 12s;
+				animation: wayElement13 1.2s linear both 12s;
 				@keyframes wayElement13 {
 					0% {
 						width: 0;
@@ -515,7 +515,7 @@
 				left: 63.35em;
 				top: 25em;
 				background-size: 100%;
-				animation: wayElement14 0.7s linear both 13s;
+				animation: wayElement14 0.8s linear both 13.4s;
 				@keyframes wayElement14 {
 					0% {
 						height: 0;
@@ -531,7 +531,7 @@
 				left: 64.65em;
 				top: 36.3em;
 				background-size: cover;
-				animation: wayElement15 0.5s linear both 14.3s;
+				animation: wayElement15 1s linear both 14.5s;
 				@keyframes wayElement15 {
 					0% {
 						width: 0;
@@ -547,7 +547,7 @@
 				left: 69.75em;
 				top: 10em;
 				background-size: 100%;
-				animation: wayElement16 0.3s linear both 15.2s;
+				animation: wayElement16 3s linear both 16s;
 				@keyframes wayElement16 {
 					0% {
 						height: 0;
@@ -565,7 +565,7 @@
 				left: 71.35em;
 				top: 10.2em;
 				background-size: cover;
-				animation: wayElement17 0.5s linear both 16.3s;
+				animation: wayElement17 1s linear both 19.4s;
 				@keyframes wayElement17 {
 					0% {
 						width: 0;
@@ -581,7 +581,7 @@
 				left: 78.25em;
 				top: 10.1em;
 				background-size: 100%;
-				animation: wayElement18 0.3s linear both 17.2s;
+				animation: wayElement18 1.1s linear both 20.6s;
 				@keyframes wayElement18 {
 					0% {
 						height: 0;
@@ -597,7 +597,7 @@
 				left: 79.65em;
 				top: 13.7em;
 				background-size: cover;
-				animation: wayElement19 0.5s linear both 18.3s;
+				animation: wayElement19 1s linear both 21.5s;
 				@keyframes wayElement19 {
 					0% {
 						width: 0;
@@ -613,7 +613,7 @@
 				left: 82.55em;
 				top: 14.9em;
 				background-size: 100%;
-				animation: wayElement20 0.5s linear both 19s;
+				animation: wayElement20 0.7s linear both 22.9s;
 				@keyframes wayElement20 {
 					0% {
 						height: 0;
@@ -629,7 +629,7 @@
 				left: 87.35em;
 				top: 23.7em;
 				background-size: cover;
-				animation: wayElement21 1s linear both 20.3s;
+				animation: wayElement21 1s linear both 24s;
 				@keyframes wayElement21 {
 					0% {
 						width: 0;
@@ -645,7 +645,7 @@
 		&:nth-child(2) {
 			.causes-item {
 				&:nth-child(2) {
-					animation: causes1 4s cubic-bezier(0.44, 0.42, 0.49, 0.48) both;
+					animation: causes1 4s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 0.5s;
 					@keyframes causes1 {
 						0% {
 							filter: grayscale(100%);
@@ -719,7 +719,7 @@
 		&:nth-child(4) {
 			.causes-item {
 				&:nth-child(2) {
-					animation: causes3 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8.7s;
+					animation: causes3 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8s;
 					@keyframes causes3 {
 						0% {
 							filter: grayscale(100%);
@@ -738,7 +738,7 @@
 
 				&__arrow {
 					&::before {
-						animation: arrow3 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8.7s;
+						animation: arrow3 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 8s;
 						@keyframes arrow3 {
 							0% {
 								background: #fff;
@@ -754,7 +754,7 @@
 		&:nth-child(5) {
 			.causes-item {
 				&:nth-child(2) {
-					animation: causes4 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12s;
+					animation: causes4 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12.5s;
 					@keyframes causes4 {
 						0% {
 							filter: grayscale(100%);
@@ -773,7 +773,7 @@
 
 				&__arrow {
 					&::before {
-						animation: arrow4 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12s;
+						animation: arrow4 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 12.5s;
 						@keyframes arrow4 {
 							0% {
 								background: #fff;
@@ -789,7 +789,7 @@
 		&:nth-child(6) {
 			.causes-item {
 				&:nth-child(2) {
-					animation: causes5 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 15.5s;
+					animation: causes5 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 18s;
 					@keyframes causes5 {
 						0% {
 							filter: grayscale(100%);
@@ -808,7 +808,7 @@
 
 				&__arrow {
 					&::before {
-						animation: arrow5 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 15.5s;
+						animation: arrow5 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 18s;
 						@keyframes arrow5 {
 							0% {
 								background: #fff;
@@ -824,7 +824,7 @@
 		&:nth-child(7) {
 			.causes-item {
 				&:nth-child(2) {
-					animation: causes6 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 19.5s;
+					animation: causes6 2s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 23.5s;
 					@keyframes causes6 {
 						0% {
 							filter: grayscale(100%);
@@ -843,7 +843,7 @@
 
 				&__arrow {
 					&::before {
-						animation: arrow6 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 19.5s;
+						animation: arrow6 1s cubic-bezier(0.44, 0.42, 0.49, 0.48) both 23.5s;
 						@keyframes arrow6 {
 							0% {
 								background: #fff;
@@ -860,183 +860,183 @@
 
 	.machine-wrap {
 		transform: translateX(90em) translateY(13em);
-		animation: machine 22s linear forwards;
+		animation: machine 25s linear forwards;
 		z-index: 1;
 		@keyframes machine {
 			0% {
 				transform: translate(0) rotate(0);
 			}
-			2.4% {
+			3.3% {
 				//1
 				transform: translate(14em, 0px);
 			}
-			4.8% {
+			3.8% {
 				//2
 				transform: translate(14em, 0px) rotate(90deg);
 			}
-			7% {
+			8% {
 				//3
 				transform: translate(14em, 27em) rotate(90deg);
 			}
-			9.4% {
+			9% {
 				//4
 				transform: translate(14em, 27.8em) rotate(0deg);
 			}
-			11.8% {
+			11% {
 				//5
 				transform: translate(19.5em, 27.8em) rotate(0deg);
 			}
-			14.2% {
+			12% {
 				//6
 				transform: translate(19.5em, 27.8em) rotate(-90deg);
 			}
-			16.6% {
+			15% {
 				//7
 				transform: translate(19.5em, 13.2em) rotate(-90deg);
 			}
-			19% {
+			16% {
 				//8
 				transform: translate(19.5em, 13.2em) rotate(0deg);
 			}
-			20.4% {
+			20% {
 				//9
 				transform: translate(35.6em, 13.2em) rotate(0deg);
 			}
-			22.8% {
+			21% {
 				//10
 				transform: translate(35.6em, 13.2em) rotate(-90deg);
 			}
-			25.2% {
+			23% {
 				//11
 				transform: translate(35.6em, 5.2em) rotate(-90deg);
 			}
-			27.6% {
+			24% {
 				//12
 				transform: translate(35.6em, 5.2em) rotate(-180deg);
 			}
-			30% {
+			26% {
 				//13
 				transform: translate(31em, 5.2em) rotate(-180deg);
 			}
-			32.4% {
+			27% {
 				//14
 				transform: translate(31em, 5.2em) rotate(-90deg);
 			}
-			34.8% {
+			30% {
 				//15
 				transform: translate(31em, 0.1em) rotate(-90deg);
 			}
-			37% {
+			31% {
 				//16
 				transform: translate(31em, 0.1em) rotate(0deg);
 			}
-			39.2% {
+			34% {
 				//17
 				transform: translate(41em, 0.1em) rotate(0deg);
 			}
-			41.6% {
+			35% {
 				//18
 				transform: translate(41em, 0.1em) rotate(-90deg);
 			}
-			44% {
+			38% {
 				//20
 				transform: translate(41em, -10.3em) rotate(-90deg);
 			}
-			46.2% {
+			39% {
 				//21
 				transform: translate(41em, -10.3em) rotate(0deg);
 			}
-			48.6% {
+			41% {
 				//22
 				transform: translate(47.2em, -10.3em) rotate(0deg);
 			}
-			50% {
+			42% {
 				//23
 				transform: translate(47.2em, -10.3em) rotate(90deg);
 			}
-			52.4% {
+			48% {
 				//24
 				transform: translate(47.2em, 13.2em) rotate(90deg);
 			}
-			54.8% {
+			49% {
 				//24
 				transform: translate(47.2em, 13.2em) rotate(0deg);
 			}
-			57.2% {
+			53% {
 				//25
 				transform: translate(61.2em, 13.2em) rotate(0deg);
 			}
-			59.6% {
+			54% {
 				//26
 				transform: translate(61.2em, 13.2em) rotate(90deg);
 			}
 
-			62% {
+			57% {
 				//27
 				transform: translate(61.2em, 25.8em) rotate(90deg);
 			}
 
-			64.4% {
+			58% {
 				//28
 				transform: translate(61.2em, 25.8em) rotate(0deg);
 			}
 
-			66.4% {
+			63% {
 				//29
 				transform: translate(68.2em, 25.8em) rotate(0deg);
 			}
 
-			68.8% {
+			65% {
 				//30
 				transform: translate(68.2em, 25.8em) rotate(-90deg);
 			}
 
-			71.2% {
+			74% {
 				//31
 				transform: translate(68.2em, -0.2em) rotate(-90deg);
 			}
 
-			73.6% {
+			75% {
 				//32
 				transform: translate(68.2em, -0.2em) rotate(0deg);
 			}
 
-			76% {
+			81% {
 				//33
 				transform: translate(76.2em, -0.2em) rotate(0deg);
 			}
 
-			78.4% {
+			82% {
 				//34
 				transform: translate(76.2em, -0.2em) rotate(90deg);
 			}
 
-			80.8% {
+			85% {
 				//35
 				transform: translate(76.2em, 3.2em) rotate(90deg);
 			}
 
-			81.2% {
+			86% {
 				//36
 				transform: translate(76.2em, 3.2em) rotate(0deg);
 			}
 
-			83.6% {
+			90% {
 				//37
 				transform: translate(80.5em, 3.2em) rotate(0deg);
 			}
 
-			86% {
+			91% {
 				//38
 				transform: translate(80.5em, 3.2em) rotate(90deg);
 			}
 
-			88.4% {
+			95% {
 				//39
 				transform: translate(80.5em, 13.2em) rotate(90deg);
 			}
 
-			90% {
+			97% {
 				//40
 				transform: translate(80.5em, 13.2em) rotate(0deg);
 			}

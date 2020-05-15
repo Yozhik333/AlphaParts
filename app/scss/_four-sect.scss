@@ -1,5 +1,5 @@
 .four-section {
-	@include fluidPaddingTop(100px, 200px, 1024px, 1620px);
+	@include fluidPaddingTop(50px, 160px, 1024px, 1620px);
 	@include fluidPaddingBottom(100px, 200px, 1024px, 1620px);
 	@media (max-width: 1620px) {
 		overflow: hidden;
@@ -13,7 +13,7 @@
 		display: flex;
 		justify-content: center;
 		margin: 0 0 77px;
-
+		@include fluidMarginBottom(5px, 50px, 1024px, 1620px);
 		p {
 			font-family: "Arial", sans-serif;
 			font-size: 36px;
@@ -710,7 +710,7 @@
 		}
 	}
 	&__text {
-		@include fluidMarginTop(45px, 77px, 1024px, 1620px);
+		@include fluidMarginTop(25px, 77px, 1024px, 1620px);
 		text-align: center;
 		position: relative;
 		@include fluidFontSize(10px, 16px, 1024px, 1620px);

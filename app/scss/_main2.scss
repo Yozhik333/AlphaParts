@@ -2,6 +2,7 @@
 
 .six-section {
 	padding: 112px 0 103px;
+	position: relative;
 	@media (max-width: 1620px) {
 		overflow: hidden;
 	}
@@ -71,11 +72,11 @@
 			}
 		}
 		&__img {
-			@include fluidWidth(800px, 1300px, 1024px, 1620px);
+			@include fluidWidth(700px, 1200px, 1024px, 1620px);
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			right: -120px;
+			right: -10%;
 			img {
 				width: 100%;
 			}
@@ -143,7 +144,7 @@
 			justify-content: center;
 			bottom: 50%;
 			transform: translateY(50%) translateX(50%);
-			right: 13%;
+			right: 10%;
 			@media (max-width: 1024px) {
 				display: none;
 			}

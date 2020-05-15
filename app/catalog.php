@@ -19,7 +19,10 @@
 	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 		|||||||||||||||||||  Designed by Maint by Dyusengaliev Temirlan ||||||||||||||||||||||-->
 
-	<header class="header header-catalog">
+	<div class="wrapper">
+		<div class="wrapper-in">
+
+		<header class="header header-catalog">
 		<div class="container-xl">
 			<div class="header__flex">
 				<div class="header__flex-left">
@@ -115,6 +118,8 @@
 		<!-- /.container -->
 	</header>
 	<!-- /.container -->
+
+	<main class="content">
 
 	<div class="catalog-banner">
 		<a class="catalog-banner__back" href="index.php"><span>&#8249;</span> Назад</a>
@@ -880,6 +885,8 @@
 	</section>
 	<!-- /.consultation -->
 
+	</main>
+
 
 	<footer class="footer">
 		<div class="container-xl">
@@ -990,6 +997,9 @@
 			</form>
 		</div>
 
+	</div>
+
+		</div>
 	</div>
 
 	<script src="js/app.min.js"></script>

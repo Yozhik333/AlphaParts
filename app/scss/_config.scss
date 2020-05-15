@@ -19,12 +19,19 @@ $gutter: $grid-gutter-width;
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid
 @import "node_modules/bootstrap/scss/utilities/_sizing.scss"; // Optional Bootstrap Utilites
+@import "node_modules/aos/dist/aos";
 
 @media (min-width: 1200px) {
 	.container-xl {
 		max-width: 1620px;
 	}
 }
+
+//.aos-animate{
+//	@media (max-width:1024px) {
+
+//	}
+//}
 
 // FONTS LOAD SECTION
 
@@ -69,6 +76,24 @@ body {
 	line-height: 1.65;
 	overflow-x: hidden;
 	color: $textcolor;
+}
+
+.wrapper,
+body,
+html {
+	height: 100%;
+}
+
+.wrapper-in {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1;
 }
 
 // Заголовки
@@ -211,10 +236,10 @@ $btn-border-width: 1px !default;
 					left: -2em;
 				}
 				50% {
-					left: 100%;
+					left: 130%;
 				}
 				100% {
-					left: 100%;
+					left: 150%;
 				}
 			}
 		}
@@ -293,6 +318,7 @@ $btn-border-width: 1px !default;
 		padding: 4px 39px 4px;
 		position: relative;
 		color: #fff;
+		box-shadow: none !important;
 		&::before {
 			content: "";
 			top: 0;
@@ -507,11 +533,11 @@ $btn-border-width: 1px !default;
 }
 
 .mouse-parallax4 {
-	@include fluidFontSize(11px, 16px, 1024px, 1620px);
+	@include fluidFontSize(8px, 16px, 1024px, 1620px);
 	width: 8.875em;
 	height: 8.375em;
 	position: absolute;
-	bottom: 4em;
+	bottom: 0em;
 	left: 0%;
 	@media (max-width: 1024px) {
 		display: none;

@@ -1,3 +1,9 @@
+AOS.init({
+	duration: 1200,
+})
+
+AOS.init({ disable: 'mobile' });
+
 document.addEventListener("DOMContentLoaded", function () {
 
 	let logo = document.querySelector('.logo');
@@ -102,7 +108,7 @@ if (bg4) {
 	window.addEventListener('mousemove', function (e) {
 		let x = e.clientX / window.innerWidth;
 		let y = e.clientY / window.innerHeight;
-		bg4.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+		bg4.style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
 	});
 }
 
