@@ -463,6 +463,15 @@ $btn-border-width: 1px !default;
 	@include fluidFontSize(19px, 19px, 1024px, 1620px);
 }
 
+.mouse-parallax,
+.mouse-parallax2,
+.mouse-parallax3,
+.mouse-parallax4,
+.mouse-parallax5,
+.mouse-parallax6 {
+	display: none;
+}
+
 .mouse-parallax {
 	width: 4.5625em;
 	height: 5em;

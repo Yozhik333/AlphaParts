@@ -121,7 +121,8 @@
 	<!-- /.container -->
 
 	<main class="content">
-				<section class="first-section">
+
+	<section class="first-section">
 					<div class="container-xl">
 						<div class="first-section__flex">
 							<div class="first-section__details">
@@ -189,23 +190,30 @@
 								<div class="background-ellipse"></div>
 							</div>
 							<!-- /.first-section__background -->
+							<div class="first__background-img"
+								style="background: url(../images/dest/excavator3.png) no-repeat center / cover;">
+								<!--style="background: url(../images/dest/main1-bg.jpg) no-repeat center / cover; background-attachment: fixed;"-->
+								<div class="excavator">
+									<div class="excavator__img">
+										<img src="../images/dest/excavator2.png" alt="Техника">
+									</div>
+								</div>
+								<div class="ellipse-circle">
+									<div class="ell e1"></div>
+									<div class="ell e2"></div>
+								</div>
+							</div>
 						</div>
 						<!-- /.first-section__flex -->
 					</div>
 					<!-- /.container-xl -->
-					<div class="first__background-img"
-						style="background: url(../images/dest/main1-bg.jpg) no-repeat center / cover; background-attachment: fixed;">
-						<div class="ellipse-circle">
-							<div class="ell e1"></div>
-							<div class="ell e2"></div>
-						</div>
-					</div>
 
-					<div class="excavator">
+
+					<!--<div class="excavator">
 						<div class="excavator__img">
-							<img src="../images/dest/excavator.png" alt="Техника">
+							<img src="../images/dest/excavator2.png" alt="Техника">
 						</div>
-					</div>
+					</div>-->
 
 
 				</section>
@@ -235,8 +243,8 @@
 									</div>
 								</div>
 								<div class="item__description" data-aos="fade-left">
-									<h3>Запасные части для<br>
-										дробилок и грохотов</h3>
+									<h3>Запасные части для<br class="br-desktop">
+										дробилок<br class="br-mobile"> и грохотов</h3>
 									<p>Все изделия для дробилок и грохотов по Вашим индивидуальным требованиям в соответствии с
 										техническим
 										заданием. Имеется большой выбор готовых запасных частей таких брендов, как <br>
@@ -253,7 +261,7 @@
 									</div>
 								</div>
 								<div class="item__description" data-aos="fade-up">
-									<h3>Запасные части<br>
+									<h3>Запасные части<br class="br-desktop">
 										для конвейеров</h3>
 									<p>Долговечные качественные запчасти для конвейеров по невысоким ценам. Вся продукция соответствует
 										действующим стандартам и технологическим требованиям оборудования. </p>
@@ -281,8 +289,8 @@
 									</div>
 								</div>
 								<div class="item__description" data-aos="fade-right">
-									<h3>Компоненты для<br>
-										мобильных дробильно-сортировочных комплексов</h3>
+									<h3>Компоненты для<br class="br-desktop">
+										мобильных<br class="br-mobile"> дробильно-сортировочных<br class="br-mobile"> комплексов</h3>
 									<p>Предлагаем высококачественные запчасти, прошедшие строгий контроль качества, чтобы сократить Ваши
 										затраты
 										на ремонт и замену основных составляющих дробилок. </p>

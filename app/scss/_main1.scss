@@ -1,17 +1,47 @@
 .excavator {
 	position: absolute;
+	//right: -14.8em;
 	right: 0;
 	bottom: 0;
-	@include fluidFontSize(8px, 15.5px, 1024px, 1920px);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	//bottom: -3.3em;
+	//@include fluidFontSize(8px, 15px, 1024px, 1620px);
 	@media (max-width: 1024px) {
 		display: none;
 	}
 	&__img {
-		height: 46.4375em;
-		width: 67.4375em;
+		height: 100%;
+		width: 100%;
 		img {
 			width: 100%;
 		}
+	}
+}
+
+.first__background-img {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	//overflow-y: hidden;
+	z-index: -1;
+	//right: 0;
+	//left: 56%;
+	right: -20%;
+	left: 48%;
+	top: -10.5em;
+	bottom: 0;
+	min-width: 31.25em;
+	height: auto;
+	@media (max-width: 1024px) {
+		display: none;
+	}
+	@media (max-width: 1620px) {
+		right: -12%;
+
+		@include fluidFontSize(8px, 15px, 1024px, 1620px);
 	}
 }
 
@@ -136,6 +166,7 @@
 
 .first-section {
 	position: relative;
+	overflow: hidden;
 	@include fluidPaddingTop(30px, 80px, 1024px, 1620px);
 	@include fluidFontSize(7px, 14px, 1024px, 1620px);
 	@media (max-width: 1024px) {
@@ -281,25 +312,6 @@
 	}
 }
 
-.first__background-img {
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	z-index: -1;
-	right: 0;
-	left: 56%;
-	top: -84px;
-	bottom: 0;
-	min-width: 31.25em;
-	height: auto;
-	//@include fluidFontSize(8px, 16px, 1024px, 1920px);
-	@media (max-width: 1024px) {
-		display: none;
-	}
-}
-
 .first__items {
 	display: flex;
 	margin: 2.5em 0 0;
@@ -428,8 +440,8 @@
 
 .ellipse-circle {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 30%;
+	right: 50%;
 	z-index: -1;
 	@media (max-width: 1024px) {
 		display: none;
@@ -470,16 +482,16 @@
 	}
 	50% {
 		opacity: 0.6;
-		width: 35em;
-		height: 35em;
+		width: 25em;
+		height: 25em;
 	}
 	75% {
 		opacity: 0.3;
 	}
 	100% {
 		opacity: 0;
-		width: 74.25em;
-		height: 74.25em;
+		width: 50.25em;
+		height: 50.25em;
 	}
 }
 
@@ -491,16 +503,16 @@
 	}
 	50% {
 		opacity: 0.4;
-		width: 50em;
-		height: 50em;
+		width: 40em;
+		height: 40em;
 	}
 	75% {
 		opacity: 0.3;
 	}
 	100% {
 		opacity: 0;
-		width: 100em;
-		height: 100em;
+		width: 80em;
+		height: 80em;
 	}
 }
 
@@ -777,7 +789,8 @@
 	@include fluidPaddingRight(0px, 40px, 1024px, 1620px);
 	@media (max-width: 1024px) {
 		h3 {
-			text-align: center;
+			text-align: left;
+			@include fluidFontSize(17px, 22px, 320px, 1024px);
 			&::before {
 				left: 0;
 			}
@@ -838,6 +851,19 @@
 				font-size: 16px;
 			}
 		}
+	}
+}
+
+.br-desktop {
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.br-mobile {
+	display: none;
+	@media (max-width: 1024px) {
+		display: block;
 	}
 }
 

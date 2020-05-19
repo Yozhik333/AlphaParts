@@ -54,9 +54,10 @@
 				//padding-right: 6.0625em;
 				z-index: 2;
 				@include fluidPaddingRight(61px, 97px, 1024px, 1680px);
-				//@media (max-width: 1360px) {
-				//	padding-right: 1.5625em;
+				//@media (min-width: 1621px) {
+				//	font-size: 18px;
 				//}
+				@include fluidFontSize(12px, 18px, 1024px, 1620px);
 				@media (max-width: 1024px) {
 					padding-right: 0;
 				}
@@ -159,7 +160,7 @@
 			}
 			.mail-wrap {
 				padding: 0px 0 0px 5px;
-				margin: 0 0.5em 0 0.2em;
+				margin: 0 3em 0 0.2em;
 				height: 1.8em;
 				@include fluidFontSize(11px, 16px, 1024px, 1620px);
 				svg {
@@ -344,7 +345,7 @@
 				}
 			}
 			.dropdown {
-				margin: 0 30px 0 10px;
+				margin: 0 30px 7px 10px;
 				@media (max-width: 1024px) {
 					margin: 0;
 					.btn {
