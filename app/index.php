@@ -363,7 +363,9 @@
 											дальнейшими рекомендациями по эксплуатации.
 										</p>
 										<div class="third-section__description-footer">
-                                            Мы открыты к партнерству и содействию успеха Вашего бизнеса!
+										Мы открыты к партнерству и
+											содействию успеха Вашего
+											бизнеса!
 										</div>
 									</div>
 								</div>
@@ -513,14 +515,14 @@
 									<div class="mobile-cube mobile-cube1">
 										<div class="cube-side-mobile">
 											<div class="mobile-cube__img">
-												<img src="images/dest/cube-1.svg" alt="Оставите контакты на сайте">
+												<img src="images/dest/cube-1.svg" alt="Оставьте контакты на сайте">
 											</div>
 										</div>
 									</div>
 
 									<div class="mobile-cube-text">
 										<p class="step">Шаг 01</p>
-										<span>Оставите</span>
+										<span>Оставьте</span>
 										<p>контакты на сайте</p>
 									</div>
 
